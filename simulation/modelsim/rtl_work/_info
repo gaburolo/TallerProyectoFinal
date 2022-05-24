@@ -1,0 +1,111 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/simulation/modelsim
+vcounterMem
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1653348504
+!i10b 1
+!s100 :A9YfZTmTPQ8OOn]:fchB0
+I`fji845Fg[MQ450U86EL:1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 counterMem_sv_unit
+S1
+R0
+w1653346522
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/counterMem.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/counterMem.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1653348504.000000
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/counterMem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/counterMem.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal}
+Z8 tCvgOpt 0
+ncounter@mem
+vDataROM
+R2
+!i10b 1
+!s100 2Hg52Q^dPPPS=K6^0KdVG1
+IWjo2?0XaJ;0:gnfajTl>a2
+R3
+R0
+w1653345973
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/DataROM.v
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/DataROM.v
+L0 40
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/DataROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/DataROM.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal}
+R8
+n@data@r@o@m
+vtestRom
+R1
+R2
+!i10b 1
+!s100 ^>1F8OIW5B[32E=80e=8W1
+IZ=?;2VE3RSRTW`QLW0nN]2
+R3
+!s105 testRom_sv_unit
+S1
+R0
+w1653348234
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/testRom.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/testRom.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/testRom.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/testRom.sv|
+!i113 1
+R6
+R7
+R8
+ntest@rom
+vtopROM
+R1
+R2
+!i10b 1
+!s100 `]H9=beGAk_n1GFPYP6nM0
+IMLnKaKa1Hh:3eH9l18GYS3
+R3
+!s105 topROM_sv_unit
+S1
+R0
+w1653348447
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topROM.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topROM.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topROM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topROM.sv|
+!i113 1
+R6
+R7
+R8
+ntop@r@o@m
