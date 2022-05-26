@@ -1,0 +1,11 @@
+module instrucMem(input logic [31:0] a, output rd [31:0]);
+	
+	logic [31:0] mem[63:0];
+	
+	initial begin 
+		$readmemh("instructions_file.mem",mem);
+	end
+
+	assign rd? = mem[address[31:2]];
+
+endmodule

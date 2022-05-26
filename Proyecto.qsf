@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY topROM
+set_global_assignment -name TOP_LEVEL_ENTITY instrucMem
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:36:31  MAY 23, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "21.1.0 Lite Edition"
@@ -56,18 +56,25 @@ set_global_assignment -name MIF_FILE MemoryInit.mif
 set_global_assignment -name QIP_FILE DataROM.qip
 set_global_assignment -name SYSTEMVERILOG_FILE counterMem.sv
 set_global_assignment -name SYSTEMVERILOG_FILE topROM.sv
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE testRom.sv
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH testRom -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH instrucMemTest -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME testRom -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testRom
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testRom -section_id testRom
+set_global_assignment -name SYSTEMVERILOG_FILE instrucMem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE instrucMemTest.sv
 set_global_assignment -name EDA_TEST_BENCH_FILE testRom.sv -section_id testRom
+set_global_assignment -name EDA_TEST_BENCH_NAME instrucMemTest -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id instrucMemTest
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME instrucMemTest -section_id instrucMemTest
+set_global_assignment -name EDA_TEST_BENCH_FILE instrucMemTest.sv -section_id instrucMemTest
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SOURCE_FILE instructions_file.mem
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

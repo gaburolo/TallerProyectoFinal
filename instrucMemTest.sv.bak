@@ -1,0 +1,22 @@
+module instrucMemTest();
+	logic [31:0]    PC = 32'b0;
+   logic [31:0]    Instr;
+   imem mem( 
+		.address(PC), 
+		.data_out(Instr)
+	);
+
+   initial begin  
+   
+	PC = 32'h00;
+	#20	  
+	PC = 32'h01;
+	#20	  
+	PC = 32'h02;
+	#20	  
+	$stop;
+        
+   end
+
+
+endmodule
