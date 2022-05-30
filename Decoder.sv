@@ -13,6 +13,6 @@ module Decoder(input  logic [3:0] Rd,
 	
 	ALUDecoder	ALUDeco(ALUOp, Funct[4:0], NoWrite, FlagW, ALUControl);
 	
-	PC_Logic PcLogic(Rd, Branch, RegW, PCS);
+	//PC_Logic PcLogic(Rd, Branch, RegW, PCS);
 					
 endmodule 

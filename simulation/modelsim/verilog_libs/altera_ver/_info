@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/simulation/modelsim
 valt_bidir_buf
-Z1 !s110 1653522041
+Z1 !s110 1653873425
 !i10b 1
 !s100 `k9N_NNE[omlCfHHm=PO53
 IIm8BM;l4:;:PNbQ?`akn;2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1653522040.000000
+Z7 !s108 1653873425.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v|
 !i113 1
@@ -618,7 +618,7 @@ R9
 R10
 R11
 UPRIM_GDFF_HIGH
-R1
+Z12 !s110 1653873426
 !i10b 1
 !s100 SScBZ?gdYFgRTOVYmj^Jh2
 I<HYC>UHG>zFFXTO:j1PWF1
@@ -640,7 +640,7 @@ R10
 R11
 n@p@r@i@m_@g@d@f@f_@h@i@g@h
 UPRIM_GDFF_HIGH_SCLR_PRIORITY
-!s110 1653522042
+R12
 !i10b 1
 !s100 F63MIm7BDi6=;U3:nVoTc3
 IX`^E2Me^GJC6Rj<]:PD`K0
@@ -684,7 +684,7 @@ R10
 R11
 n@p@r@i@m_@g@d@f@f_@l@o@w
 UPRIM_GDFF_LOW_SCLR_PRIORITY
-R1
+R12
 !i10b 1
 !s100 `gUo^mjm:1ILUg``]kfOO1
 ICRE7lV<Mim<63V2VKBF;f0
