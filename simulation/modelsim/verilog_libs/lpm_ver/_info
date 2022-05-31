@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/simulation/modelsim
 vlpm_abs
-Z1 !s110 1653873426
+Z1 !s110 1654013902
 !i10b 1
 !s100 O9i<YS?ECZC8XU2m2T>HQ0
 IPA?QJ0Fgj]5ZaDCz:^EZN2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1653873426.000000
+Z7 !s108 1654013902.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|lpm_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v|
 !i113 1
@@ -72,7 +72,7 @@ R9
 R10
 R11
 vlpm_bipad
-Z12 !s110 1653873427
+R1
 !i10b 1
 !s100 2eZaafdWMNbm_oGJD`IS61
 ID2Te8z^5G8T@7JS;Y7C>V0
@@ -304,7 +304,7 @@ R9
 R10
 R11
 vlpm_fifo_dc
-R12
+R1
 !i10b 1
 !s100 OX@8oU3SO:LJ;3_=8UL@^3
 IJ5_V^:TYMJ6eE>928z1Bg3
@@ -325,7 +325,7 @@ R9
 R10
 R11
 vlpm_fifo_dc_async
-R12
+R1
 !i10b 1
 !s100 W7]nBZXG1HNLF0lVB9i:n0
 IFM]i381KNbePeOXO_0@390
@@ -410,7 +410,7 @@ R10
 R11
 n@l@p@m_@h@i@n@t_@e@v@a@l@u@a@t@i@o@n
 vlpm_inpad
-R12
+R1
 !i10b 1
 !s100 V5b_N<Y1MO:^NFkHi2nm:1
 IkeA;93gL>z2jU5nZFU4nm2
@@ -558,7 +558,7 @@ R9
 R10
 R11
 vlpm_outpad
-R12
+R1
 !i10b 1
 !s100 co;D>HcBWR;nkbnW:TU;e3
 I2hYV5W6:>m=;5dU2E^OX83
