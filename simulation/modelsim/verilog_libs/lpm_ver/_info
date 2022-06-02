@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/simulation/modelsim
 vlpm_abs
-Z1 !s110 1654013902
+Z1 !s110 1654189129
 !i10b 1
 !s100 O9i<YS?ECZC8XU2m2T>HQ0
 IPA?QJ0Fgj]5ZaDCz:^EZN2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1654013902.000000
+Z7 !s108 1654189129.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|lpm_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v|
 !i113 1

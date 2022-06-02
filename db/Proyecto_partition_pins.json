@@ -4,23 +4,15 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "RegW",
+					"name" : "RegSrc[0]",
 					"strict" : false
 				},
 				{
-					"name" : "MemW",
+					"name" : "RegSrc[1]",
 					"strict" : false
 				},
 				{
-					"name" : "MemtoReg",
-					"strict" : false
-				},
-				{
-					"name" : "ALUSrc",
-					"strict" : false
-				},
-				{
-					"name" : "NoWrite",
+					"name" : "RegWrite",
 					"strict" : false
 				},
 				{
@@ -32,19 +24,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "FlagW[0]",
-					"strict" : false
-				},
-				{
-					"name" : "FlagW[1]",
-					"strict" : false
-				},
-				{
-					"name" : "RegSrc[0]",
-					"strict" : false
-				},
-				{
-					"name" : "RegSrc[1]",
+					"name" : "ALUSrc",
 					"strict" : false
 				},
 				{
@@ -56,39 +36,83 @@
 					"strict" : false
 				},
 				{
-					"name" : "ALUControl[2]",
+					"name" : "MemWrite",
 					"strict" : false
 				},
 				{
-					"name" : "Op[0]",
+					"name" : "MemtoReg",
 					"strict" : false
 				},
 				{
-					"name" : "Op[1]",
+					"name" : "Instr[27]",
 					"strict" : false
 				},
 				{
-					"name" : "Funct[0]",
+					"name" : "Instr[26]",
 					"strict" : false
 				},
 				{
-					"name" : "Funct[5]",
+					"name" : "Instr[28]",
 					"strict" : false
 				},
 				{
-					"name" : "Funct[2]",
+					"name" : "Instr[29]",
 					"strict" : false
 				},
 				{
-					"name" : "Funct[3]",
+					"name" : "Instr[30]",
 					"strict" : false
 				},
 				{
-					"name" : "Funct[4]",
+					"name" : "Instr[31]",
 					"strict" : false
 				},
 				{
-					"name" : "Funct[1]",
+					"name" : "Instr[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Instr[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Instr[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Instr[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Instr[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Instr[25]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUFlags[2]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "ALUFlags[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUFlags[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUFlags[0]",
 					"strict" : false
 				}
 			]

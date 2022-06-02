@@ -1,4 +1,44 @@
-|Decoder
+|controller
+clk => clk.IN1
+reset => reset.IN1
+Instr[12] => Instr[12].IN1
+Instr[13] => Instr[13].IN1
+Instr[14] => Instr[14].IN1
+Instr[15] => Instr[15].IN1
+Instr[16] => ~NO_FANOUT~
+Instr[17] => ~NO_FANOUT~
+Instr[18] => ~NO_FANOUT~
+Instr[19] => ~NO_FANOUT~
+Instr[20] => Instr[20].IN1
+Instr[21] => Instr[21].IN1
+Instr[22] => Instr[22].IN1
+Instr[23] => Instr[23].IN1
+Instr[24] => Instr[24].IN1
+Instr[25] => Instr[25].IN1
+Instr[26] => Instr[26].IN1
+Instr[27] => Instr[27].IN1
+Instr[28] => Instr[28].IN1
+Instr[29] => Instr[29].IN1
+Instr[30] => Instr[30].IN1
+Instr[31] => Instr[31].IN1
+ALUFlags[0] => ALUFlags[0].IN1
+ALUFlags[1] => ALUFlags[1].IN1
+ALUFlags[2] => ALUFlags[2].IN1
+ALUFlags[3] => ALUFlags[3].IN1
+RegSrc[0] << Decoder:dec.port11
+RegSrc[1] << Decoder:dec.port11
+RegWrite << condlogic:cl.port10
+ImmSrc[0] << Decoder:dec.port9
+ImmSrc[1] << Decoder:dec.port9
+ALUSrc << Decoder:dec.port7
+ALUControl[0] << Decoder:dec.port12
+ALUControl[1] << Decoder:dec.port12
+MemWrite << condlogic:cl.port11
+MemtoReg << Decoder:dec.port6
+PCSrc << condlogic:cl.port9
+
+
+|controller|Decoder:dec
 Rd[0] => ~NO_FANOUT~
 Rd[1] => ~NO_FANOUT~
 Rd[2] => ~NO_FANOUT~
@@ -11,24 +51,24 @@ Funct[2] => Funct[2].IN1
 Funct[3] => Funct[3].IN1
 Funct[4] => Funct[4].IN1
 Funct[5] => Funct[5].IN1
-PCS << <GND>
-RegW << MainDecoder:MainDeco.port4
-MemW << MainDecoder:MainDeco.port5
-MemtoReg << MainDecoder:MainDeco.port6
-ALUSrc << MainDecoder:MainDeco.port7
-NoWrite << ALUDecoder:ALUDeco.port2
-ImmSrc[0] << MainDecoder:MainDeco.port9
-ImmSrc[1] << MainDecoder:MainDeco.port9
-FlagW[0] << ALUDecoder:ALUDeco.port3
-FlagW[1] << ALUDecoder:ALUDeco.port3
-RegSrc[0] << MainDecoder:MainDeco.port10
-RegSrc[1] << MainDecoder:MainDeco.port10
-ALUControl[0] << ALUDecoder:ALUDeco.port4
-ALUControl[1] << ALUDecoder:ALUDeco.port4
-ALUControl[2] << ALUDecoder:ALUDeco.port4
+PCS <= <GND>
+RegW <= MainDecoder:MainDeco.port4
+MemW <= MainDecoder:MainDeco.port5
+MemtoReg <= MainDecoder:MainDeco.port6
+ALUSrc <= MainDecoder:MainDeco.port7
+NoWrite <= ALUDecoder:ALUDeco.port2
+ImmSrc[0] <= MainDecoder:MainDeco.port9
+ImmSrc[1] <= MainDecoder:MainDeco.port9
+FlagW[0] <= ALUDecoder:ALUDeco.port3
+FlagW[1] <= ALUDecoder:ALUDeco.port3
+RegSrc[0] <= MainDecoder:MainDeco.port10
+RegSrc[1] <= MainDecoder:MainDeco.port10
+ALUControl[0] <= ALUDecoder:ALUDeco.port4
+ALUControl[1] <= ALUDecoder:ALUDeco.port4
+ALUControl[2] <= ALUDecoder:ALUDeco.port4
 
 
-|Decoder|MainDecoder:MainDeco
+|controller|Decoder:dec|MainDecoder:MainDeco
 Op[0] => controls.OUTPUTSELECT
 Op[0] => Mux0.IN4
 Op[0] => Mux1.IN4
@@ -57,7 +97,7 @@ RegSrc[0] <= Op[1].DB_MAX_OUTPUT_PORT_TYPE
 RegSrc[1] <= Op[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Decoder|ALUDecoder:ALUDeco
+|controller|Decoder:dec|ALUDecoder:ALUDeco
 ALUOp => ALUControl.OUTPUTSELECT
 ALUOp => ALUControl.OUTPUTSELECT
 ALUOp => ALUControl.OUTPUTSELECT
@@ -86,5 +126,72 @@ FlagW[1] <= FlagW.DB_MAX_OUTPUT_PORT_TYPE
 ALUControl[0] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 ALUControl[1] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 ALUControl[2] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controller|condlogic:cl
+clk => clk.IN2
+reset => reset.IN2
+Cond[0] => Cond[0].IN1
+Cond[1] => Cond[1].IN1
+Cond[2] => Cond[2].IN1
+Cond[3] => Cond[3].IN1
+ALUFlags[0] => ALUFlags[0].IN1
+ALUFlags[1] => ALUFlags[1].IN1
+ALUFlags[2] => ALUFlags[2].IN1
+ALUFlags[3] => ALUFlags[3].IN1
+FlagW[0] => FlagWrite.IN1
+FlagW[1] => FlagWrite.IN1
+PCS => PCSrc.IN1
+RegW => RegWrite.IN1
+MemW => MemWrite.IN1
+NoWrite => RegWrite.IN1
+PCSrc <= PCSrc.DB_MAX_OUTPUT_PORT_TYPE
+RegWrite <= RegWrite.DB_MAX_OUTPUT_PORT_TYPE
+MemWrite <= MemWrite.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controller|condlogic:cl|flopenr:flagreg1
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+en => ~NO_FANOUT~
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controller|condlogic:cl|flopenr:flagreg0
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+en => ~NO_FANOUT~
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controller|condlogic:cl|condcheck:cc
+Cond[0] => Mux0.IN14
+Cond[1] => Mux0.IN13
+Cond[2] => Mux0.IN12
+Cond[3] => Mux0.IN11
+Flags[0] => ge.IN0
+Flags[0] => Mux0.IN18
+Flags[0] => Mux0.IN5
+Flags[1] => CondEx.IN0
+Flags[1] => Mux0.IN17
+Flags[1] => Mux0.IN3
+Flags[2] => Mux0.IN16
+Flags[2] => CondEx.IN1
+Flags[2] => CondEx.IN1
+Flags[2] => Mux0.IN8
+Flags[3] => ge.IN1
+Flags[3] => Mux0.IN15
+Flags[3] => Mux0.IN4
+CondEx <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

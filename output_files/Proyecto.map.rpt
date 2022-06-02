@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Proyecto
-Tue May 31 10:56:49 2022
+Thu Jun  2 10:58:34 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -14,11 +14,14 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "MainDecoder:MainDeco"
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
- 13. Analysis & Synthesis Suppressed Messages
+  9. Parameter Settings for User Entity Instance: condlogic:cl|flopenr:flagreg1
+ 10. Parameter Settings for User Entity Instance: condlogic:cl|flopenr:flagreg0
+ 11. Port Connectivity Checks: "Decoder:dec|MainDecoder:MainDeco"
+ 12. Port Connectivity Checks: "Decoder:dec"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+ 16. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -45,14 +48,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 31 10:56:49 2022       ;
+; Analysis & Synthesis Status     ; Successful - Thu Jun  2 10:58:34 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Proyecto                                    ;
-; Top-level Entity Name           ; Decoder                                     ;
+; Top-level Entity Name           ; controller                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 27                                          ;
+; Total registers                 ; 4                                           ;
+; Total pins                      ; 37                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -71,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; Decoder            ; Proyecto           ;
+; Top-level entity name                                                           ; controller         ; Proyecto           ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -176,45 +179,53 @@ https://fpgasoftware.intel.com/eula.
 ; MainDecoder.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/MainDecoder.sv ;         ;
 ; ALUDecoder.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/ALUDecoder.sv  ;         ;
 ; Decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv     ;         ;
+; condlogic.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv   ;         ;
+; controller.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv  ;         ;
+; flopenr.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv     ;         ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 6           ;
-;                                             ;             ;
-; Combinational ALUT usage for logic          ; 11          ;
-;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 1           ;
-;     -- 5 input functions                    ; 0           ;
-;     -- 4 input functions                    ; 3           ;
-;     -- <=3 input functions                  ; 7           ;
-;                                             ;             ;
-; Dedicated logic registers                   ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 27          ;
-;                                             ;             ;
-; Total DSP Blocks                            ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; Op[0]~input ;
-; Maximum fan-out                             ; 10          ;
-; Total fan-out                               ; 77          ;
-; Average fan-out                             ; 1.18        ;
-+---------------------------------------------+-------------+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimate of Logic utilization (ALMs needed) ; 8               ;
+;                                             ;                 ;
+; Combinational ALUT usage for logic          ; 11              ;
+;     -- 7 input functions                    ; 0               ;
+;     -- 6 input functions                    ; 3               ;
+;     -- 5 input functions                    ; 3               ;
+;     -- 4 input functions                    ; 3               ;
+;     -- <=3 input functions                  ; 2               ;
+;                                             ;                 ;
+; Dedicated logic registers                   ; 4               ;
+;                                             ;                 ;
+; I/O pins                                    ; 37              ;
+;                                             ;                 ;
+; Total DSP Blocks                            ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; Instr[26]~input ;
+; Maximum fan-out                             ; 8               ;
+; Total fan-out                               ; 110             ;
+; Average fan-out                             ; 1.24            ;
++---------------------------------------------+-----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                              ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+-------------+--------------+
-; |Decoder                   ; 11 (0)              ; 0 (0)                     ; 0                 ; 0          ; 27   ; 0            ; |Decoder                      ; Decoder     ; work         ;
-;    |ALUDecoder:ALUDeco|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Decoder|ALUDecoder:ALUDeco   ; ALUDecoder  ; work         ;
-;    |MainDecoder:MainDeco|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Decoder|MainDecoder:MainDeco ; MainDecoder ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+-------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                               ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name ; Library Name ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-------------+--------------+
+; |controller                  ; 11 (0)              ; 4 (0)                     ; 0                 ; 0          ; 37   ; 0            ; |controller                                  ; controller  ; work         ;
+;    |Decoder:dec|             ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|Decoder:dec                      ; Decoder     ; work         ;
+;       |ALUDecoder:ALUDeco|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|Decoder:dec|ALUDecoder:ALUDeco   ; ALUDecoder  ; work         ;
+;       |MainDecoder:MainDeco| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|Decoder:dec|MainDecoder:MainDeco ; MainDecoder ; work         ;
+;    |condlogic:cl|            ; 8 (3)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|condlogic:cl                     ; condlogic   ; work         ;
+;       |condcheck:cc|         ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|condlogic:cl|condcheck:cc        ; condcheck   ; work         ;
+;       |flopenr:flagreg0|     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|condlogic:cl|flopenr:flagreg0    ; flopenr     ; work         ;
+;       |flopenr:flagreg1|     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|condlogic:cl|flopenr:flagreg1    ; flopenr     ; work         ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -223,18 +234,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: condlogic:cl|flopenr:flagreg1 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: condlogic:cl|flopenr:flagreg0 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "MainDecoder:MainDeco"                                                                 ;
+; Port Connectivity Checks: "Decoder:dec|MainDecoder:MainDeco"                                                     ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                             ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
@@ -242,23 +273,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Decoder:dec"                                                                                                                        ;
++------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                                       ;
++------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+; ALUControl ; Output ; Warning  ; Output or bidir port (3 bits) is wider than the port expression (2 bits) it drives; bit(s) "ALUControl[2..2]" have no fanouts ;
++------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
+; arriav_ff             ; 4                           ;
+;     CLR               ; 4                           ;
 ; arriav_lcell_comb     ; 14                          ;
 ;     normal            ; 14                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 4                           ;
+;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 3                           ;
-;         6 data inputs ; 1                           ;
-; boundary_port         ; 27                          ;
+;         5 data inputs ; 3                           ;
+;         6 data inputs ; 3                           ;
+; boundary_port         ; 37                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.09                        ;
+; Average LUT depth     ; 1.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -267,7 +309,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -277,7 +319,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue May 31 10:56:10 2022
+    Info: Processing started: Thu Jun  2 10:58:23 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proyecto -c Proyecto
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -305,30 +347,45 @@ Info (12021): Found 1 design units, including 1 entities, in source file decoder
 Info (12021): Found 2 design units, including 2 entities, in source file condlogic.sv
     Info (12023): Found entity 1: condlogic File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv Line: 1
     Info (12023): Found entity 2: condcheck File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv Line: 28
-Info (12127): Elaborating entity "Decoder" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file controller.sv
+    Info (12023): Found entity 1: controller File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controllertest.sv
+    Info (12023): Found entity 1: controllerTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controllerTest.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flopenr.sv
+    Info (12023): Found entity 1: flopenr File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv Line: 1
+Info (12127): Elaborating entity "controller" for the top level hierarchy
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:dec" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 18
 Warning (10034): Output port "PCS" at Decoder.sv(4) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 4
-Info (12128): Elaborating entity "MainDecoder" for hierarchy "MainDecoder:MainDeco" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 12
-Info (12128): Elaborating entity "ALUDecoder" for hierarchy "ALUDecoder:ALUDeco" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 14
+Info (12128): Elaborating entity "MainDecoder" for hierarchy "Decoder:dec|MainDecoder:MainDeco" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 12
+Info (12128): Elaborating entity "ALUDecoder" for hierarchy "Decoder:dec|ALUDecoder:ALUDeco" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 14
+Info (12128): Elaborating entity "condlogic" for hierarchy "condlogic:cl" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 22
+Info (12128): Elaborating entity "flopenr" for hierarchy "condlogic:cl|flopenr:flagreg1" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv Line: 15
+Info (12128): Elaborating entity "condcheck" for hierarchy "condlogic:cl|condcheck:cc" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv Line: 20
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "PCS" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 4
+    Warning (13410): Pin "PCSrc" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/output_files/Proyecto.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Rd[0]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 1
-    Warning (15610): No output dependent on input pin "Rd[1]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 1
-    Warning (15610): No output dependent on input pin "Rd[2]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 1
-    Warning (15610): No output dependent on input pin "Rd[3]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 1
-Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 11 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Tue May 31 10:56:49 2022
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:00:28
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Instr[12]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instr[13]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instr[14]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instr[15]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instr[16]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instr[17]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instr[18]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instr[19]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
+Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 26 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 15 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4808 megabytes
+    Info: Processing ended: Thu Jun  2 10:58:34 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:25
 
 
 +------------------------------------------+
