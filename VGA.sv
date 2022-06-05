@@ -1,0 +1,20 @@
+module VGA(
+	input logic clk,
+	output logic [7:0] Red, Green, Blue,
+	output logic hsync, vsync, vgaclk);
+	
+	assign sync=1'b0;
+	
+	dividerClock cmh(clk, clk2);
+	SYNC s1(
+		.VGA_CLK_IN(clk2), 
+		.o_hsync(hsync), 
+		.o_vsync(vsync), 
+		.VGA_CLK_OUT(vgaclk),
+		.out_R(Red),
+		.out_B(Blue),
+		.out_G(Green)
+		);
+		
+		
+endmodule 

@@ -4,115 +4,115 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "RegSrc[0]",
+					"name" : "R[0]",
 					"strict" : false
 				},
 				{
-					"name" : "RegSrc[1]",
+					"name" : "R[1]",
 					"strict" : false
 				},
 				{
-					"name" : "RegWrite",
+					"name" : "R[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ImmSrc[0]",
+					"name" : "R[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ImmSrc[1]",
+					"name" : "R[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ALUSrc",
+					"name" : "R[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ALUControl[0]",
+					"name" : "R[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ALUControl[1]",
+					"name" : "R[7]",
 					"strict" : false
 				},
 				{
-					"name" : "MemWrite",
+					"name" : "G[0]",
 					"strict" : false
 				},
 				{
-					"name" : "MemtoReg",
+					"name" : "G[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr[27]",
+					"name" : "G[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr[26]",
+					"name" : "G[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr[28]",
+					"name" : "G[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr[29]",
+					"name" : "G[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr[30]",
+					"name" : "G[6]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr[31]",
+					"name" : "G[7]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr[20]",
+					"name" : "B[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr[21]",
+					"name" : "B[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr[22]",
+					"name" : "B[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr[23]",
+					"name" : "B[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr[24]",
+					"name" : "B[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Instr[25]",
+					"name" : "B[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ALUFlags[2]",
+					"name" : "B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "hsync",
+					"strict" : false
+				},
+				{
+					"name" : "vsync",
+					"strict" : false
+				},
+				{
+					"name" : "vgaclk",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
-					"name" : "ALUFlags[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUFlags[3]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUFlags[0]",
 					"strict" : false
 				}
 			]
