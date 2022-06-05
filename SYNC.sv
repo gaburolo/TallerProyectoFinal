@@ -29,6 +29,27 @@ module SYNC(
 	reg[7:0] color_B=0;
 	reg[7:0] color_G=0;
 	
+	//reg[9:0] px=335;
+	//reg[9:0] py=77;
+	
+	
+	Pixel_On_Text2 #(.displayText("Un pequeno paso para el hombre,")) t1(
+                VGA_CLK_IN,
+                335, // text position.x (top left)
+                77, // text position.y (top left)
+                sx, // current position.x
+                sy, // current position.y
+                pixel  // result, 1 if current pixel is on text, 0 otherwise
+            );
+				
+	Pixel_On_Text2 #(.displayText("un gran paso para la humanidad")) t2(
+                VGA_CLK_IN,
+                335, // text position.x (top left)
+                97, // text position.y (top left)
+                sx, // current position.x
+                sy, // current position.y
+                pixel2  // result, 1 if current pixel is on text, 0 otherwise
+            );
 	
 	//FOR DOBLE
 	always @(posedge VGA_CLK_IN)
@@ -74,34 +95,21 @@ module SYNC(
 					begin 
 						{color_R,color_G,color_B} <= `BLACK;
 					end
-				else if((330 < sx && sx < 596) && (70 < sy && sy < 470)) //Renglones
+				else if((330 < sx && sx < 596) && (70 < sy && sy < 470) && 
+						  (sy == 90  || sy == 110 || sy == 130 || sy == 150 || sy == 170 || sy == 190 || sy == 210 || 
+							sy == 230 || sy == 250 || sy == 270 || sy == 290 || sy == 310 || sy == 330 || sy == 350 ||
+							sy == 370 || sy == 390 || sy == 410 || sy == 430 || sy == 450)) //Renglones
 					begin 
-						if(sy == 90) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 110) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 130) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 150) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 170) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 190) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 210) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 230) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 250) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 270) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 290) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 310) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 330) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 350) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 370) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 390) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 410) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 430) {color_R,color_G,color_B} <= `GRAY;
-						if(sy == 450) {color_R,color_G,color_B} <= `GRAY;
+						{color_R,color_G,color_B} <= `GRAY;
 					end
 				else //zona util
 					begin
-					{color_R,color_G,color_B} <= `WHITE;
+						if(pixel == 1 || pixel2 == 1) {color_R,color_G,color_B} <= `BLACK;
+						else {color_R,color_G,color_B} <= `WHITE;
 					end
 			end
 		end
+
 	
 	assign o_hsync = (0 <= sx && sx <96) ? 1:0;
 	assign o_vsync = (0 <= sy && sy <2) ? 1:0;
