@@ -5,11 +5,9 @@ library work;
 use work.commonPak.all;
 
 entity Pixel_On_Text2 is
-	generic(
-		displayText: string  := (others => NUL)
-	);
 	port (
 		clk: in std_logic;
+		displayText: in string(1 to 32);
 		positionX: in integer;
 		positionY: in integer;
 		horzCoord: in integer;

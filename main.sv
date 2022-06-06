@@ -8,8 +8,11 @@ module main(
    output logic vgaclk
    );
 	
+	reg[31*8-1:0] s1 = "Un pequeno paso para el hombre,";
+	
 	VGA control(
 		.clk(clk),
+		.s1(s1),
 		.Red(R), 
 		.Green(G), 
 		.Blue(B), 

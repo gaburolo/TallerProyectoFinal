@@ -12,6 +12,7 @@
 
 module SYNC(
 	input logic VGA_CLK_IN,
+	input [31*8-1:0] s1,
 	output logic VGA_CLK_OUT,
 	output logic o_hsync,
 	output logic o_vsync,
@@ -29,12 +30,12 @@ module SYNC(
 	reg[7:0] color_B=0;
 	reg[7:0] color_G=0;
 	
-	//reg[9:0] px=335;
-	//reg[9:0] py=77;
+	wire[255:0] text1 = "Un pequeno paso para el hombre,";
+	wire[255:0] text2 = "un gran paso para la humanidad";
 	
-	
-	Pixel_On_Text2 #(.displayText("Un pequeno paso para el hombre,")) t1(
+	Pixel_On_Text2 t1(
                 VGA_CLK_IN,
+					 text1,
                 335, // text position.x (top left)
                 77, // text position.y (top left)
                 sx, // current position.x
@@ -42,8 +43,9 @@ module SYNC(
                 pixel  // result, 1 if current pixel is on text, 0 otherwise
             );
 				
-	Pixel_On_Text2 #(.displayText("un gran paso para la humanidad")) t2(
+	Pixel_On_Text2 t2(
                 VGA_CLK_IN,
+					 text2,
                 335, // text position.x (top left)
                 97, // text position.y (top left)
                 sx, // current position.x
