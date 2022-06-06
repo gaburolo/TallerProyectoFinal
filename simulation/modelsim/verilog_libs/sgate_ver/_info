@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/simulation/modelsim
 vio_buf_opdrn
-Z1 !s110 1654189130
+Z1 !s110 1654498075
 !i10b 1
 !s100 VhizJG_UoJ<b<SS=?:bCT2
 I8n^`e2NeOb`WzQ2SV=KF32
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1654189130.000000
+Z7 !s108 1654498075.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/sgate.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|sgate_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/sgate.v|
 !i113 1
@@ -114,7 +114,7 @@ R9
 R10
 R11
 voper_bus_mux
-R1
+Z12 !s110 1654498076
 !i10b 1
 !s100 <QAOZae4<L6l]N?[hZ6cV0
 IFZe4B0CJfo;D0M_V:^3;j0
@@ -135,7 +135,7 @@ R9
 R10
 R11
 voper_decoder
-R1
+R12
 !i10b 1
 !s100 WF@i7V0YS>liZCkHzI1]g2
 I@@LYk=f4W^2f30Jkc[64Y1
@@ -177,7 +177,7 @@ R9
 R10
 R11
 voper_latch
-R1
+R12
 !i10b 1
 !s100 [26OEODU?jK0WVIPH6H@12
 I1c=K7<F8@>92k^0C6Fehe3
@@ -198,7 +198,7 @@ R9
 R10
 R11
 voper_left_shift
-R1
+R12
 !i10b 1
 !s100 oEX`oU<M]4;:hXO0T_J4Q0
 IiRmF]7BOEX<GhMH0[=7NP0
@@ -219,7 +219,7 @@ R9
 R10
 R11
 voper_less_than
-R1
+R12
 !i10b 1
 !s100 7]>dQPEcF[:0Yfl:?a`Sd0
 IUQ:9mY]H]@B81@HFGkg5X1
@@ -240,7 +240,7 @@ R9
 R10
 R11
 voper_mod
-R1
+R12
 !i10b 1
 !s100 SHPDPUBZCW7f4Ao1FH>E@3
 IiaN>RaoG41F;;jFi>V3a60
@@ -282,7 +282,7 @@ R9
 R10
 R11
 voper_mux
-R1
+R12
 !i10b 1
 !s100 =OXiOUmAaVXl6FLDLY8Fg3
 IJ5fAnh@3n4Ud[NXmo`Yff2
@@ -303,7 +303,7 @@ R9
 R10
 R11
 voper_right_shift
-R1
+R12
 !i10b 1
 !s100 SJb]ZjP[^k;ijbIaz@C4X1
 IGOjadK:870_3hlT1aUB_X0
@@ -324,7 +324,7 @@ R9
 R10
 R11
 voper_rotate_left
-R1
+R12
 !i10b 1
 !s100 ]^Q15_44QmmReONg[Ze@>1
 I8hg]AV<Me4YL?A<dHe^mV0
@@ -345,7 +345,7 @@ R9
 R10
 R11
 voper_rotate_right
-R1
+R12
 !i10b 1
 !s100 OzOO95^?ClVNBgL0?:>MF2
 IYIQ1GicDGgVQRd1AgJB]E1
@@ -366,7 +366,7 @@ R9
 R10
 R11
 voper_selector
-R1
+R12
 !i10b 1
 !s100 7T8d]AYhJ_?U?SDL236<k2
 IcIYied;HC[0>P;aWW2QN`2

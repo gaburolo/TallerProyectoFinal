@@ -1,5 +1,5 @@
 Flow report for Proyecto
-Thu Jun  2 10:58:34 2022
+Mon Jun  6 00:54:54 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Jun  2 10:58:34 2022       ;
+; Flow Status                     ; Successful - Mon Jun  6 00:54:53 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Proyecto                                    ;
-; Top-level Entity Name           ; controller                                  ;
+; Top-level Entity Name           ; dataMem                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 4                                           ;
-; Total pins                      ; 37                                          ;
+; Total registers                 ; 8192                                        ;
+; Total pins                      ; 50                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/02/2022 10:58:23 ;
+; Start date & time ; 06/06/2022 00:54:35 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Proyecto            ;
 +-------------------+---------------------+
@@ -79,42 +79,49 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 84440849251880.165418910312768         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 84440849251880.165449847513264         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testRom                           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; decoderTest                       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; controllerTest                    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; dataMemTest                       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; aluTest                           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; instrucMemTest                    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; controllerTest                         ; --            ; --          ; eda_simulation                    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; dataMemTest                            ; --            ; --          ; eda_simulation                    ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation                    ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim (SystemVerilog)               ; <None>        ; --          ; --                                ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_FILE                  ; testRom.sv                             ; --            ; --          ; testRom                           ;
 ; EDA_TEST_BENCH_FILE                  ; decoderTest.sv                         ; --            ; --          ; decoderTest                       ;
 ; EDA_TEST_BENCH_FILE                  ; controllerTest.sv                      ; --            ; --          ; controllerTest                    ;
+; EDA_TEST_BENCH_FILE                  ; dataMemTest.sv                         ; --            ; --          ; dataMemTest                       ;
+; EDA_TEST_BENCH_FILE                  ; aluTest.sv                             ; --            ; --          ; aluTest                           ;
 ; EDA_TEST_BENCH_FILE                  ; instrucMemTest.sv                      ; --            ; --          ; instrucMemTest                    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; testRom                                ; --            ; --          ; testRom                           ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; decoderTest                            ; --            ; --          ; decoderTest                       ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; controllerTest                         ; --            ; --          ; controllerTest                    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; dataMemTest                            ; --            ; --          ; dataMemTest                       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; aluTest                                ; --            ; --          ; aluTest                           ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; instrucMemTest                         ; --            ; --          ; instrucMemTest                    ;
 ; EDA_TEST_BENCH_NAME                  ; testRom                                ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; instrucMemTest                         ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; decoderTest                            ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; controllerTest                         ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; aluTest                                ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; dataMemTest                            ; --            ; --          ; eda_simulation                    ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
-; MISC_FILE                            ; DataROM_bb.v                           ; --            ; --          ; --                                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; controller  ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; controller  ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; controller  ; Top                               ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; dataMem     ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; dataMem     ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; dataMem     ; Top                               ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                     ; controller                             ; Proyecto      ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                     ; dataMem                                ; Proyecto      ; --          ; --                                ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
@@ -123,8 +130,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4799 MB             ; 00:00:25                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:25                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4852 MB             ; 00:00:32                           ;
+; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:32                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

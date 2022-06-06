@@ -1,0 +1,56 @@
+module dataMemTest();
+
+    logic        clk, we;
+    logic [31:0] address;
+    logic [7:0]  data_in;
+    logic [7:0]  data_out;
+
+    dmem ram(
+        clk,
+        we,
+        address,
+        data_in,
+        data_out
+    );
+	 // ROM
+        we = 0;
+        data_in = 8'bx;
+        for ( address = 32'h0; address < 32'h30; address = address + 32'h4) 
+        begin
+            clk = 1;
+            #20
+
+            clk = 0;
+            #20
+				
+				$stop;
+        end
+        
+
+        // RAM
+
+        // Write
+        clk = 1;
+		  address = 32'h200;
+        data_in = 32'h5a;
+        we = 1;
+        #20
+		  
+		  // Read
+        clk = 0;
+		  we = 0;
+        #20
+
+        // Read
+        clk = 1;
+        we = 0;
+        address = 32'h201;
+        #20
+		
+		  clk = 0;
+		  #20
+
+        $stop;
+	 
+	 
+endmodule

@@ -29,9 +29,9 @@ table=""
 def createMem(label, table):
     cont=0
     for i in label:
-        table=table+"	"+str(cont)+"    :   "+str(i)+"\n"
+        table=table+"	"+str(cont)+"    :   "+str(i)+";\n"
         cont=cont+1
-    table=table+"	["+str(cont)+"...255]"+"    :   0"
+    table=table+"	["+str(cont)+"..255]"+"    :   0;"
     return table
 
 def ascii_convert(text):

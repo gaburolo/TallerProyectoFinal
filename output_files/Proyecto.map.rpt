@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Proyecto
-Thu Jun  2 10:58:34 2022
+Mon Jun  6 00:54:53 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -14,14 +14,10 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: condlogic:cl|flopenr:flagreg1
- 10. Parameter Settings for User Entity Instance: condlogic:cl|flopenr:flagreg0
- 11. Port Connectivity Checks: "Decoder:dec|MainDecoder:MainDeco"
- 12. Port Connectivity Checks: "Decoder:dec"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
- 16. Analysis & Synthesis Suppressed Messages
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+ 12. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -48,14 +44,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Jun  2 10:58:34 2022       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun  6 00:54:53 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Proyecto                                    ;
-; Top-level Entity Name           ; controller                                  ;
+; Top-level Entity Name           ; dataMem                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 4                                           ;
-; Total pins                      ; 37                                          ;
+; Total registers                 ; 8192                                        ;
+; Total pins                      ; 50                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -74,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; controller         ; Proyecto           ;
+; Top-level entity name                                                           ; dataMem            ; Proyecto           ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -164,68 +160,58 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                            ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
-; MainDecoder.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/MainDecoder.sv ;         ;
-; ALUDecoder.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/ALUDecoder.sv  ;         ;
-; Decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv     ;         ;
-; condlogic.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv   ;         ;
-; controller.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv  ;         ;
-; flopenr.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv     ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                        ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
+; dataMem.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv ;         ;
+; rom.mem                          ; yes             ; User Unspecified File        ; C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/rom.mem    ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                   ;
-+---------------------------------------------+-----------------+
-; Resource                                    ; Usage           ;
-+---------------------------------------------+-----------------+
-; Estimate of Logic utilization (ALMs needed) ; 8               ;
-;                                             ;                 ;
-; Combinational ALUT usage for logic          ; 11              ;
-;     -- 7 input functions                    ; 0               ;
-;     -- 6 input functions                    ; 3               ;
-;     -- 5 input functions                    ; 3               ;
-;     -- 4 input functions                    ; 3               ;
-;     -- <=3 input functions                  ; 2               ;
-;                                             ;                 ;
-; Dedicated logic registers                   ; 4               ;
-;                                             ;                 ;
-; I/O pins                                    ; 37              ;
-;                                             ;                 ;
-; Total DSP Blocks                            ; 0               ;
-;                                             ;                 ;
-; Maximum fan-out node                        ; Instr[26]~input ;
-; Maximum fan-out                             ; 8               ;
-; Total fan-out                               ; 110             ;
-; Average fan-out                             ; 1.24            ;
-+---------------------------------------------+-----------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 5666      ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 3875      ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 2792      ;
+;     -- 5 input functions                    ; 0         ;
+;     -- 4 input functions                    ; 16        ;
+;     -- <=3 input functions                  ; 1067      ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 8192      ;
+;                                             ;           ;
+; I/O pins                                    ; 50        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 8192      ;
+; Total fan-out                               ; 44565     ;
+; Average fan-out                             ; 3.66      ;
++---------------------------------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                               ;
-+------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name ; Library Name ;
-+------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-------------+--------------+
-; |controller                  ; 11 (0)              ; 4 (0)                     ; 0                 ; 0          ; 37   ; 0            ; |controller                                  ; controller  ; work         ;
-;    |Decoder:dec|             ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|Decoder:dec                      ; Decoder     ; work         ;
-;       |ALUDecoder:ALUDeco|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|Decoder:dec|ALUDecoder:ALUDeco   ; ALUDecoder  ; work         ;
-;       |MainDecoder:MainDeco| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|Decoder:dec|MainDecoder:MainDeco ; MainDecoder ; work         ;
-;    |condlogic:cl|            ; 8 (3)               ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|condlogic:cl                     ; condlogic   ; work         ;
-;       |condcheck:cc|         ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|condlogic:cl|condcheck:cc        ; condcheck   ; work         ;
-;       |flopenr:flagreg0|     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|condlogic:cl|flopenr:flagreg0    ; flopenr     ; work         ;
-;       |flopenr:flagreg1|     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |controller|condlogic:cl|flopenr:flagreg1    ; flopenr     ; work         ;
-+------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |dataMem                   ; 3875 (3875)         ; 8192 (8192)               ; 0                 ; 0          ; 50   ; 0            ; |dataMem            ; dataMem     ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -234,52 +220,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4     ;
+; Total registers                              ; 8192  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 8192  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: condlogic:cl|flopenr:flagreg1 ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: condlogic:cl|flopenr:flagreg0 ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Decoder:dec|MainDecoder:MainDeco"                                                     ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Branch ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Decoder:dec"                                                                                                                        ;
-+------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                                                                       ;
-+------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; ALUControl ; Output ; Warning  ; Output or bidir port (3 bits) is wider than the port expression (2 bits) it drives; bit(s) "ALUControl[2..2]" have no fanouts ;
-+------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -287,20 +235,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 4                           ;
-;     CLR               ; 4                           ;
-; arriav_lcell_comb     ; 14                          ;
-;     normal            ; 14                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 3                           ;
-;         6 data inputs ; 3                           ;
-; boundary_port         ; 37                          ;
+; arriav_ff             ; 8192                        ;
+;     ENA               ; 8192                        ;
+; arriav_lcell_comb     ; 3875                        ;
+;     normal            ; 3875                        ;
+;         1 data inputs ; 43                          ;
+;         3 data inputs ; 1024                        ;
+;         4 data inputs ; 16                          ;
+;         6 data inputs ; 2792                        ;
+; boundary_port         ; 50                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.89                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 4.71                        ;
 +-----------------------+-----------------------------+
 
 
@@ -309,7 +255,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -319,18 +265,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Jun  2 10:58:23 2022
+    Info: Processing started: Mon Jun  6 00:54:34 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proyecto -c Proyecto
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file datarom.v
-    Info (12023): Found entity 1: DataROM File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/DataROM.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file countermem.sv
-    Info (12023): Found entity 1: counterMem File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/counterMem.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file toprom.sv
-    Info (12023): Found entity 1: topROM File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topROM.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file testrom.sv
-    Info (12023): Found entity 1: testRom File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/testRom.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file instrucmem.sv
     Info (12023): Found entity 1: instrucMem File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/instrucMem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instrucmemtest.sv
@@ -353,39 +291,61 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
     Info (12023): Found entity 1: controllerTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controllerTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flopenr.sv
     Info (12023): Found entity 1: flopenr File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv Line: 1
-Info (12127): Elaborating entity "controller" for the top level hierarchy
-Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:dec" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 18
-Warning (10034): Output port "PCS" at Decoder.sv(4) has no driver File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 4
-Info (12128): Elaborating entity "MainDecoder" for hierarchy "Decoder:dec|MainDecoder:MainDeco" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 12
-Info (12128): Elaborating entity "ALUDecoder" for hierarchy "Decoder:dec|ALUDecoder:ALUDeco" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv Line: 14
-Info (12128): Elaborating entity "condlogic" for hierarchy "condlogic:cl" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 22
-Info (12128): Elaborating entity "flopenr" for hierarchy "condlogic:cl|flopenr:flagreg1" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv Line: 15
-Info (12128): Elaborating entity "condcheck" for hierarchy "condlogic:cl|condcheck:cc" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv Line: 20
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "PCSrc" is stuck at GND File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file suma.sv
+    Info (12023): Found entity 1: suma File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/suma.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: alu File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/alu.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alutest.sv
+    Info (12023): Found entity 1: aluTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/aluTest.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_2.sv
+    Info (12023): Found entity 1: mux_2 File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/mux_2.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file datamem.sv
+    Info (12023): Found entity 1: dataMem File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file datamemtest.sv
+    Info (12023): Found entity 1: dataMemTest File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMemTest.sv Line: 1
+Info (12127): Elaborating entity "dataMem" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at dataMem.sv(3): object "addr" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 3
+Warning (10036): Verilog HDL or VHDL warning at dataMem.sv(4): object "done" assigned a value but never read File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 4
+Warning (10850): Verilog HDL warning at dataMem.sv(7): number of words (11) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 7
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "RAM" is uninferred due to asynchronous read logic File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 2
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/db/Proyecto.ram0_dataMem_869b274b.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/output_files/Proyecto.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Instr[12]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instr[13]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instr[14]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instr[15]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instr[16]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instr[17]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instr[18]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instr[19]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv Line: 2
-Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 26 input pins
-    Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 15 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4808 megabytes
-    Info: Processing ended: Thu Jun  2 10:58:34 2022
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+Warning (21074): Design contains 22 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "a[0]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[1]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[12]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[13]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[14]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[15]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[16]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[17]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[18]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[19]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[20]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[21]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[22]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[23]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[24]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[25]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[26]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[27]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[28]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[29]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[30]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+    Warning (15610): No output dependent on input pin "a[31]" File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv Line: 1
+Info (21057): Implemented 12074 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 42 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 12024 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 4852 megabytes
+    Info: Processing ended: Mon Jun  6 00:54:54 2022
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:33
 
 
 +------------------------------------------+

@@ -8,207 +8,55 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/simulation/modelsim
-vALUDecoder
+vdataMem
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1654189154
+!s110 1654498108
 !i10b 1
-!s100 M8aAeb4XnDY5jI?So90QY3
-IkZTNUQ6;Y3_Ag0>OlG]bk2
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 ALUDecoder_sv_unit
+!s100 l61N@AS^Vh;?@TY:INffm3
+I<NgHfn@P702QGI1f^mlRM2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 dataMem_sv_unit
 S1
 R0
-Z4 w1653872177
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/ALUDecoder.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/ALUDecoder.sv
+w1654497410
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv
 L0 1
-Z5 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1654189154.000000
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/ALUDecoder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/ALUDecoder.sv|
+!s108 1654498108.000000
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal}
-Z9 tCvgOpt 0
-n@a@l@u@decoder
-vcondcheck
+Z4 o-sv -work work
+Z5 !s92 -sv -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal}
+Z6 tCvgOpt 0
+ndata@mem
+vdataMemTest
 R1
+!s110 1654498109
+!i10b 1
+!s100 kVf0mRk1<8FUhcddJ;LUa1
+IREO8>GS@GhY@Cb_jZ_NKM2
 R2
-!i10b 1
-!s100 W<dSU8d3XlPb5`T=Io]5f2
-IjHfG>@5I:MIDKJzT83FLE3
-R3
-Z10 !s105 condlogic_sv_unit
+!s105 dataMemTest_sv_unit
 S1
 R0
-Z11 w1654015942
-Z12 8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv
-Z13 FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv
-L0 28
-R5
-r1
-!s85 0
-31
-R6
-Z14 !s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv|
-Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv|
-!i113 1
-R7
-R8
-R9
-vcondlogic
-R1
-R2
-!i10b 1
-!s100 d8_0JIXmIlZ]CWGD3473D2
-I=_nlV_9kI6Ke9<P6T9Of`2
-R3
-R10
-S1
-R0
-R11
-R12
-R13
+w1654497795
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMemTest.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMemTest.sv
 L0 1
-R5
+R3
 r1
 !s85 0
 31
-R6
-R14
-R15
+!s108 1654498109.000000
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMemTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMemTest.sv|
 !i113 1
-R7
-R8
-R9
-vcontroller
-R1
-Z16 !s110 1654189155
-!i10b 1
-!s100 9YP59daZ6NHinzenJ?IOm1
-I6LF4ELiO<X?AVY2j`KEfY1
-R3
-!s105 controller_sv_unit
-S1
-R0
-w1654187362
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv|
-!i113 1
-R7
-R8
-R9
-vcontrollerTest
-R1
-R16
-!i10b 1
-!s100 Obo;eboOJaY8GIgAF^iRm2
-IYP?XF05QW;UkRZ2^<eA[m3
-R3
-!s105 controllerTest_sv_unit
-S1
-R0
-w1654189101
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controllerTest.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controllerTest.sv
-L0 1
-R5
-r1
-!s85 0
-31
-Z17 !s108 1654189155.000000
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controllerTest.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controllerTest.sv|
-!i113 1
-R7
-R8
-R9
-ncontroller@test
-vDecoder
-R1
-R2
-!i10b 1
-!s100 PPjzA0bbBHiOBnR_LOf2?3
-I]L:<NdkSQoeD[NL87S[Yo2
-R3
-!s105 Decoder_sv_unit
-S1
-R0
-w1653872784
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv|
-!i113 1
-R7
-R8
-R9
-n@decoder
-vflopenr
-R1
-R16
-!i10b 1
-!s100 `9]>0?bSgK2lc2W0M33I[0
-I6nXP_bjWBLcIE7iMQV^_V3
-R3
-!s105 flopenr_sv_unit
-S1
-R0
-w1654186146
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv
-L0 1
-R5
-r1
-!s85 0
-31
-R17
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv|
-!i113 1
-R7
-R8
-R9
-vMainDecoder
-R1
-!s110 1654189153
-!i10b 1
-!s100 96@b]n`bTd>3e2z7dzHFV2
-I]Pl6=WN3ha5SHlV_Mc;kX3
-R3
-!s105 MainDecoder_sv_unit
-S1
-R0
 R4
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/MainDecoder.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/MainDecoder.sv
-L0 1
 R5
-r1
-!s85 0
-31
-!s108 1654189153.000000
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/MainDecoder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/MainDecoder.sv|
-!i113 1
-R7
-R8
-R9
-n@main@decoder
+R6
+ndata@mem@test
