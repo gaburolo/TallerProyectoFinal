@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Mon Jun  6 00:54:53 2022
+Analysis & Synthesis Status : Successful - Wed Jun  8 00:28:08 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : Proyecto
-Top-level Entity Name : dataMem
+Top-level Entity Name : extend
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 8192
-Total pins : 50
+Total registers : 0
+Total pins : 58
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

@@ -11,7 +11,10 @@ module dataMem(input logic clk, we, input logic [31:0] a, input logic [7:0] w_da
 	
 	
 	always_ff @(posedge clk) begin
-		if (we) RAM[a[31:2]] <= w_data;
+		if (we) begin 
+		RAM[a[31:2]] <= w_data;
+		$writememh("rom.mem", RAM);
+		end
 	end
 	
 	

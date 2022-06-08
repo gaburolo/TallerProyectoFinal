@@ -45,11 +45,11 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/extend.sv}
 
-vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMemTest.sv}
+vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/extendTest.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  dataMemTest
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  extendTest
 
 add wave *
 view structure

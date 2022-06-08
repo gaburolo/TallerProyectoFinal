@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/simulation/modelsim
 va_graycounter
-Z1 !s110 1654498079
+Z1 !s110 1654669726
 !i10b 1
 !s100 7RL@7]^Mkb[^0^A4A<DHg3
 IGm[l0nCoQQX>GKo:Ub1V:2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1654498076.000000
+Z7 !s108 1654669723.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_mf_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v|
 !i113 1
@@ -240,7 +240,7 @@ R9
 R10
 R11
 valtaccumulate
-Z12 !s110 1654498077
+Z12 !s110 1654669724
 !i10b 1
 !s100 ]J^>>M@KIe6:;k?@cL6jK0
 I=e<zWgBcTbj9MDBM>a_?g3
@@ -261,7 +261,7 @@ R9
 R10
 R11
 valtclklock
-Z13 !s110 1654498078
+Z13 !s110 1654669725
 !i10b 1
 !s100 dZP2fY7[X6OBenFPi2M3>2
 IV[h?h_biz`Z1PSiEKZE1:1
@@ -345,7 +345,7 @@ R9
 R10
 R11
 valtdpram
-R13
+R1
 !i10b 1
 !s100 BE726jY[MoUWTU>>?R`hZ1
 I`6g?SRL=9>jlLQkE;PSkd2
@@ -366,7 +366,7 @@ R9
 R10
 R11
 vALTERA_DEVICE_FAMILIES
-Z14 !s110 1654498076
+R12
 !i10b 1
 !s100 g5AaI^Fb2<aM@cCC[B8PB1
 I>JN:Z;3IKZJF^FzdN5?EB3
@@ -388,7 +388,7 @@ R10
 R11
 n@a@l@t@e@r@a_@d@e@v@i@c@e_@f@a@m@i@l@i@e@s
 vALTERA_MF_HINT_EVALUATION
-R14
+R12
 !i10b 1
 !s100 PH5i_RH6C@2cMRnc4>ae12
 I0LbICTTQZEDKDbj^H;@KN3
@@ -410,7 +410,7 @@ R10
 R11
 n@a@l@t@e@r@a_@m@f_@h@i@n@t_@e@v@a@l@u@a@t@i@o@n
 vALTERA_MF_MEMORY_INITIALIZATION
-R14
+R12
 !i10b 1
 !s100 nTma^h04MOBz8;HdmmAdW1
 I1?IMXNB?@`>8o@1nHj3Sk0
@@ -600,7 +600,7 @@ R9
 R10
 R11
 valtmult_add
-R12
+R13
 !i10b 1
 !s100 <>@[FFHS;IjA6YnRoVfJm3
 I<Cc`agCUC4T4a2CPYS34O1
@@ -789,7 +789,7 @@ R9
 R10
 R11
 valtsyncram
-R13
+R1
 !i10b 1
 !s100 K:Qc=Y0o3h>fB?4Q3W7c?1
 I6^hbeH2h7iaZMI2XdAWXR2
@@ -831,7 +831,7 @@ R9
 R10
 R11
 varm_m_cntr
-R14
+R12
 !i10b 1
 !s100 aE>Dk`dHV;WL1F5DL`IJe0
 IPWJ;V]Ke4?Xg?OZ>IFMkC3
@@ -852,7 +852,7 @@ R9
 R10
 R11
 varm_n_cntr
-R14
+R12
 !i10b 1
 !s100 XVOhjdU?l`B?8Uf;M45`N2
 I5`UJbl]c?=P_:U5^mfkhm0
@@ -873,7 +873,7 @@ R9
 R10
 R11
 varm_scale_cntr
-R14
+R12
 !i10b 1
 !s100 j]gN?cGBNo4nUKi^cZIh[0
 IT_DGZ3odZQVIIbacPX_;D0
@@ -894,7 +894,7 @@ R9
 R10
 R11
 vcda_m_cntr
-R14
+R12
 !i10b 1
 !s100 :_<zBWUomnj5alzgCU8:]0
 IPgR`]TFGAVl>7<Na?@PTN2
@@ -915,7 +915,7 @@ R9
 R10
 R11
 vcda_n_cntr
-R14
+R12
 !i10b 1
 !s100 nV^XiEi5JIcj0HOIXaGc03
 I6DHZoNEZeKK3`_CeSDolX0
@@ -936,7 +936,7 @@ R9
 R10
 R11
 vcda_scale_cntr
-R14
+R12
 !i10b 1
 !s100 4J1MoLY9=kLfU@38IMIjc2
 ID8KJEY9jc1K1>=_Eb^HSm0
@@ -1125,7 +1125,7 @@ R9
 R10
 R11
 vdffp
-R14
+R12
 !i10b 1
 !s100 SnNjJNaU3KC[OThjodVFi2
 IldhTk9^lmDRi<9j2?cVLF1
@@ -1230,7 +1230,7 @@ R9
 R10
 R11
 vlcell
-R14
+R12
 !i10b 1
 !s100 5QGV:R[KdXJ5TR1bkQiUU0
 Iom4SznABbQF1Q2PI:keXm1
@@ -1361,7 +1361,7 @@ R10
 R11
 n@m@f_cycloneiiigl_scale_cntr
 vMF_pll_reg
-R14
+R12
 !i10b 1
 !s100 0HDLA_Ae606hC35WQ6^7]2
 IR6h?HP[M]0YN?^WL1N]X?1
@@ -1383,7 +1383,7 @@ R10
 R11
 n@m@f_pll_reg
 vMF_stratix_pll
-R14
+R12
 !i10b 1
 !s100 kITDCAAk7nE?EU[@=@9Oo1
 I6B61EQ1a:SLTFUWS7ZfB=1
@@ -1405,7 +1405,7 @@ R10
 R11
 n@m@f_stratix_pll
 vMF_stratixii_pll
-R14
+R12
 !i10b 1
 !s100 m<j8S?b80d7m:cRfTMSCR0
 IVNWCPdDUdUe70>AfPMd;@2
@@ -1427,7 +1427,7 @@ R10
 R11
 n@m@f_stratixii_pll
 vMF_stratixiii_pll
-R14
+R12
 !i10b 1
 !s100 >>583Yjn4HPZb7`:4`;I@1
 IRKeK>^c:@W:i9=f^GVN8n1
@@ -1470,7 +1470,7 @@ R9
 R10
 R11
 vpll_iobuf
-R14
+R12
 !i10b 1
 !s100 Y>n^z1AP@XWBOng[;X`=B1
 IK[Md:ZL3[5YO@0cVhSSNm1
@@ -1785,7 +1785,7 @@ R9
 R10
 R11
 vstx_m_cntr
-R14
+R12
 !i10b 1
 !s100 ?>o7Q<XCBPSD4HoGd5:>A0
 I32l2^IUj^c:^JH=PDcPE83
@@ -1806,7 +1806,7 @@ R9
 R10
 R11
 vstx_n_cntr
-R14
+R12
 !i10b 1
 !s100 ?P@b:4DafJ_^m9ka]DFD53
 I=`TiY8]E`R0mSFZ6KeP6n2
@@ -1827,7 +1827,7 @@ R9
 R10
 R11
 vstx_scale_cntr
-R14
+R12
 !i10b 1
 !s100 a@[2eTC]]LIFm0QFl5WUj2
 I?:dT`]7]lnIGQ3AHODjKY3
@@ -1848,7 +1848,7 @@ R9
 R10
 R11
 vttn_m_cntr
-R14
+R12
 !i10b 1
 !s100 ;3NK]8TY<L]eQ[IJY0gF32
 Il`0=V9d^Xh449;3DgZc7n3
@@ -1869,7 +1869,7 @@ R9
 R10
 R11
 vttn_n_cntr
-R14
+R12
 !i10b 1
 !s100 7nCN0ZiXcEmbIBT5Y>_4a1
 ILAo=C`IHS5j_AATMDb65S0
@@ -1890,7 +1890,7 @@ R9
 R10
 R11
 vttn_scale_cntr
-R14
+R12
 !i10b 1
 !s100 _jZZ0@3D`H8_VG516F<O_0
 INCez7CAP0c<VjFcFM^1jc1
