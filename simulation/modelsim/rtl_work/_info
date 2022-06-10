@@ -8,54 +8,55 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/simulation/modelsim
-vextend
+vregisterFile
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1654669749
+Z2 !s110 1654826416
 !i10b 1
-!s100 VXRlo4ZOdk:XiZnHzP2HG1
-IFPbilRRZCbkIV:_6:fMOc0
+!s100 eXDh[[>38>HDTD^i5fRE03
+IMj<;g69n[j?j9A>[Dz27;2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 extend_sv_unit
+!s105 registerFile_sv_unit
 S1
 R0
-w1654669107
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/extend.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/extend.sv
+w1654823760
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/registerFile.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/registerFile.sv
 L0 1
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1654669749.000000
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/extend.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/extend.sv|
+Z5 !s108 1654826416.000000
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/registerFile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/registerFile.sv|
 !i113 1
 Z6 o-sv -work work
 Z7 !s92 -sv -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal}
 Z8 tCvgOpt 0
-vextendTest
+nregister@file
+vregisterFileTest
 R1
 R2
 !i10b 1
-!s100 6KlkBAhEk21^j`@nUEzPR2
-Ie[PLR@VSKQ1FaNNj883Df2
+!s100 _I8mamNGJCz8@dCfFE5F60
+IAiEb5UONcRhQR5ljfcS8T3
 R3
-!s105 extendTest_sv_unit
+!s105 registerFileTest_sv_unit
 S1
 R0
-w1654669674
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/extendTest.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/extendTest.sv
+w1654826278
+8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/registerFileTest.sv
+FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/registerFileTest.sv
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/extendTest.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/extendTest.sv|
+!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/registerFileTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/registerFileTest.sv|
 !i113 1
 R6
 R7
 R8
-nextend@test
+nregister@file@test

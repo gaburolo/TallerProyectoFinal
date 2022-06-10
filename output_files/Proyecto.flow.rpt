@@ -1,5 +1,5 @@
 Flow report for Proyecto
-Wed Jun  8 00:28:09 2022
+Thu Jun  9 19:59:05 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Jun  8 00:28:08 2022       ;
+; Flow Status                     ; Successful - Thu Jun  9 19:59:05 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Proyecto                                    ;
-; Top-level Entity Name           ; extend                                      ;
+; Top-level Entity Name           ; registerFile                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 58                                          ;
+; Total registers                 ; 480                                         ;
+; Total pins                      ; 142                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -68,65 +68,69 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/08/2022 00:27:57 ;
+; Start date & time ; 06/09/2022 19:58:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Proyecto            ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 84440849251880.165466967709404         ; --            ; --          ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testRom                           ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; decoderTest                       ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; controllerTest                    ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; dataMemTest                       ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; aluTest                           ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; instrucMemTest                    ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; extendTest                        ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; extendTest                             ; --            ; --          ; eda_simulation                    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim (SystemVerilog)               ; <None>        ; --          ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                  ; testRom.sv                             ; --            ; --          ; testRom                           ;
-; EDA_TEST_BENCH_FILE                  ; decoderTest.sv                         ; --            ; --          ; decoderTest                       ;
-; EDA_TEST_BENCH_FILE                  ; controllerTest.sv                      ; --            ; --          ; controllerTest                    ;
-; EDA_TEST_BENCH_FILE                  ; dataMemTest.sv                         ; --            ; --          ; dataMemTest                       ;
-; EDA_TEST_BENCH_FILE                  ; aluTest.sv                             ; --            ; --          ; aluTest                           ;
-; EDA_TEST_BENCH_FILE                  ; instrucMemTest.sv                      ; --            ; --          ; instrucMemTest                    ;
-; EDA_TEST_BENCH_FILE                  ; extendTest.sv                          ; --            ; --          ; extendTest                        ;
-; EDA_TEST_BENCH_MODULE_NAME           ; testRom                                ; --            ; --          ; testRom                           ;
-; EDA_TEST_BENCH_MODULE_NAME           ; decoderTest                            ; --            ; --          ; decoderTest                       ;
-; EDA_TEST_BENCH_MODULE_NAME           ; controllerTest                         ; --            ; --          ; controllerTest                    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; dataMemTest                            ; --            ; --          ; dataMemTest                       ;
-; EDA_TEST_BENCH_MODULE_NAME           ; aluTest                                ; --            ; --          ; aluTest                           ;
-; EDA_TEST_BENCH_MODULE_NAME           ; instrucMemTest                         ; --            ; --          ; instrucMemTest                    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; extendTest                             ; --            ; --          ; extendTest                        ;
-; EDA_TEST_BENCH_NAME                  ; testRom                                ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; instrucMemTest                         ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; decoderTest                            ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; controllerTest                         ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; aluTest                                ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; dataMemTest                            ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; extendTest                             ; --            ; --          ; eda_simulation                    ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; extend      ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; extend      ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; extend      ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                     ; extend                                 ; Proyecto      ; --          ; --                                ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                 ;
++--------------------------------------+----------------------------------------+---------------+--------------+-----------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name  ; Section Id                        ;
++--------------------------------------+----------------------------------------+---------------+--------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 84440849251880.165482633310288         ; --            ; --           ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; testRom                           ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; decoderTest                       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; controllerTest                    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; dataMemTest                       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; aluTest                           ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; instrucMemTest                    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; extendTest                        ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; registerFileTest                  ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --           ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --           ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --           ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --           ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; registerFileTest                       ; --            ; --           ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --           ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (SystemVerilog)               ; <None>        ; --           ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --           ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; testRom.sv                             ; --            ; --           ; testRom                           ;
+; EDA_TEST_BENCH_FILE                  ; decoderTest.sv                         ; --            ; --           ; decoderTest                       ;
+; EDA_TEST_BENCH_FILE                  ; controllerTest.sv                      ; --            ; --           ; controllerTest                    ;
+; EDA_TEST_BENCH_FILE                  ; dataMemTest.sv                         ; --            ; --           ; dataMemTest                       ;
+; EDA_TEST_BENCH_FILE                  ; aluTest.sv                             ; --            ; --           ; aluTest                           ;
+; EDA_TEST_BENCH_FILE                  ; instrucMemTest.sv                      ; --            ; --           ; instrucMemTest                    ;
+; EDA_TEST_BENCH_FILE                  ; extendTest.sv                          ; --            ; --           ; extendTest                        ;
+; EDA_TEST_BENCH_FILE                  ; registerFileTest.sv                    ; --            ; --           ; registerFileTest                  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testRom                                ; --            ; --           ; testRom                           ;
+; EDA_TEST_BENCH_MODULE_NAME           ; decoderTest                            ; --            ; --           ; decoderTest                       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; controllerTest                         ; --            ; --           ; controllerTest                    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; dataMemTest                            ; --            ; --           ; dataMemTest                       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; aluTest                                ; --            ; --           ; aluTest                           ;
+; EDA_TEST_BENCH_MODULE_NAME           ; instrucMemTest                         ; --            ; --           ; instrucMemTest                    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; extendTest                             ; --            ; --           ; extendTest                        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; registerFileTest                       ; --            ; --           ; registerFileTest                  ;
+; EDA_TEST_BENCH_NAME                  ; testRom                                ; --            ; --           ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; instrucMemTest                         ; --            ; --           ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; decoderTest                            ; --            ; --           ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; controllerTest                         ; --            ; --           ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; aluTest                                ; --            ; --           ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; dataMemTest                            ; --            ; --           ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; extendTest                             ; --            ; --           ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; registerFileTest                       ; --            ; --           ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --           ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --           ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --           ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; registerFile ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; registerFile ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; registerFile ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --           ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --           ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --           ; --                                ;
+; TOP_LEVEL_ENTITY                     ; registerFile                           ; Proyecto      ; --           ; --                                ;
++--------------------------------------+----------------------------------------+---------------+--------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
