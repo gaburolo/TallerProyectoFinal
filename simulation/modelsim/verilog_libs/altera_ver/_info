@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/simulation/modelsim
 valt_bidir_buf
-Z1 !s110 1654928721
+Z1 !s110 1654929310
 !i10b 1
 !s100 `k9N_NNE[omlCfHHm=PO53
 IIm8BM;l4:;:PNbQ?`akn;2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1654928721.000000
+Z7 !s108 1654929310.000000
 Z8 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_ver|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v|
 !i113 1
@@ -618,7 +618,7 @@ R9
 R10
 R11
 UPRIM_GDFF_HIGH
-Z12 !s110 1654928722
+Z12 !s110 1654929311
 !i10b 1
 !s100 SScBZ?gdYFgRTOVYmj^Jh2
 I<HYC>UHG>zFFXTO:j1PWF1

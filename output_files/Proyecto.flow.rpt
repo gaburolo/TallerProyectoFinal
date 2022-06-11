@@ -1,5 +1,5 @@
 Flow report for Proyecto
-Sat Jun 11 00:24:47 2022
+Sat Jun 11 00:48:37 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sat Jun 11 00:24:46 2022       ;
+; Flow Status                     ; Successful - Sat Jun 11 00:48:37 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Proyecto                                    ;
 ; Top-level Entity Name           ; dataMem                                     ;
@@ -49,8 +49,8 @@ https://fpgasoftware.intel.com/eula.
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 8192                                        ;
-; Total pins                      ; 194                                         ;
+; Total registers                 ; 5120                                        ;
+; Total pins                      ; 5,170                                       ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/11/2022 00:24:19 ;
+; Start date & time ; 06/11/2022 00:48:12 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Proyecto            ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 84440849251880.165492865815156         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 84440849251880.165493009211768         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testRom                           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; decoderTest                       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; controllerTest                    ;
@@ -138,8 +138,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:28     ; 1.0                     ; 4858 MB             ; 00:00:39                           ;
-; Total                ; 00:00:28     ; --                      ; --                  ; 00:00:39                           ;
+; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 4837 MB             ; 00:00:37                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

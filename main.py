@@ -5,12 +5,16 @@ table=""
 def createMem(label, table):
     cont=0
     for i in label:
-        if (len(label)-1)>cont:
-            table=table+str(i)+"\n"
-        else:
-            table=table+str(i)
-    
+        table=table+str(i)+"\n"
         cont+=1
+    print(table)
+    while(cont<640):
+        if 639!=cont:
+            table=table+str(32)+"\n"
+        else:
+            table=table+str(32)
+        cont+=1
+   
     return table
 
 def ascii_convert(text):
@@ -33,4 +37,4 @@ textAscii=ascii_convert(text)
 table = createMem(textAscii, table)
 finalText=table
 file_Mem(finalText)
-print(finalText)
+

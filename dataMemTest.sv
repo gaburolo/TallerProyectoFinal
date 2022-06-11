@@ -1,16 +1,17 @@
 module dataMemTest();
 
-    logic        clk, we;
-    logic [31:0] address;
-    logic [7:0]  data_in;
-    logic [7:0]  data_out;
-
-    dataMem ram(
+   logic        clk, we;
+   logic [31:0] address;
+   logic [7:0]  data_in;
+   logic [7:0]  data_out;
+	logic  [7:0] chars [639:0];
+   dataMem ram(
         clk,
         we,
         address,
         data_in,
-        data_out
+        data_out,
+		  chars
     );
 	  initial begin
 	 // ROM

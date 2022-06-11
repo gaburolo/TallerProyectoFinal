@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/simulation/modelsim
 vdataMem
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1654928746
+Z2 !s110 1654929335
 !i10b 1
 !s100 P=z12kmi2U[fo7kd_7Y@Q3
 IafIIikRMVib2>cjm>9SfR2
@@ -26,13 +26,13 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1654928746.000000
+!s108 1654929334.000000
 !s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal}
-Z8 tCvgOpt 0
+Z5 o-sv -work work
+Z6 !s92 -sv -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal}
+Z7 tCvgOpt 0
 ndata@mem
 vdataMemTest
 R1
@@ -52,11 +52,11 @@ R4
 r1
 !s85 0
 31
-R5
+!s108 1654929335.000000
 !s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMemTest.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMemTest.sv|
 !i113 1
+R5
 R6
 R7
-R8
 ndata@mem@test
