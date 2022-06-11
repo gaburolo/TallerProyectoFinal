@@ -1,0 +1,21 @@
+module vgaDataTest();
+
+    logic [7:0] salida[];
+
+    vgaData ram(
+        salida
+    );
+	  initial begin
+	 // ROM
+        clk=0;
+		  #20
+		  clk=1;
+		  #20
+		  clk=0;
+		  #20
+		  clk=1;
+		  #20
+        $stop;
+	 end
+	 
+endmodule

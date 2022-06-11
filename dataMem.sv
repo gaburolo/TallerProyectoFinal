@@ -1,7 +1,7 @@
-module dataMem(input logic clk, we, input logic [31:0] a, input logic [7:0] w_data, output logic [7:0] rd);
+module dataMem(input logic clk, we, input logic [31:0] a, input logic [7:0] w_data, output logic [7:0] rd, output logic  [7:0] chars [17:0]);
 	logic [7:0] RAM[1023:0];
-	logic [7:0]  addr = 8'b0;
-	logic		  done = 1'b0;
+
+	
 	
 	initial begin
         $readmemh("rom.mem", RAM);
@@ -16,6 +16,7 @@ module dataMem(input logic clk, we, input logic [31:0] a, input logic [7:0] w_da
 			$writememh("rom.mem", RAM);
 		end
 	end
+	assign chars = RAM[17:0];
 	
 	
 endmodule

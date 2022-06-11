@@ -1,0 +1,27 @@
+module vgaData(output logic [7:0] salida[]);
+
+	logic [7:0] RAM[1023:0];
+	initial begin
+		$readmemh("rom.mem", RAM);
+   end
+	
+	logic con [300:0];
+	
+	always_comb begin
+		if(con<=300) begin
+			if(RAM[con[31:2]] == 31'hx) begin
+				
+				con=con+4;
+			end
+			else begin
+				salida[con] <= RAM[con[31:2]];
+				con=con+4;
+			end
+		end
+			
+	
+	end
+	
+	
+	 
+endmodule
