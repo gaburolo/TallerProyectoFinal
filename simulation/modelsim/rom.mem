@@ -2,13 +2,13 @@
 // instance=/topARMTest/cpu/dmem/RAM
 // format=hex addressradix=h dataradix=h version=1.0 wordsperline=1 noaddress
 53
-21
+45
 4d
-21
+45
 53
 54
 52
-21
+45
 20
 48
 4f
@@ -16,17 +16,17 @@
 41
 20
 51
-21
-21
+55
+41
 52
 54
-21
+55
 53
 20
 43
-21
+45
 4c
-21
+55
 4c
 41
 52

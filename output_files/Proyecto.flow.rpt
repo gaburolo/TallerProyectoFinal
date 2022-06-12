@@ -1,5 +1,5 @@
 Flow report for Proyecto
-Sun Jun 12 13:10:00 2022
+Sun Jun 12 16:42:45 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Jun 12 13:10:00 2022       ;
+; Flow Status                     ; Successful - Sun Jun 12 16:42:45 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Proyecto                                    ;
 ; Top-level Entity Name           ; main                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 274 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 85                                          ;
-; Total pins                      ; 28 / 457 ( 6 % )                            ;
+; Logic utilization (in ALMs)     ; 1,111 / 32,070 ( 3 % )                      ;
+; Total registers                 ; 1390                                        ;
+; Total pins                      ; 29 / 457 ( 6 % )                            ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 327,680 / 4,065,280 ( 8 % )                 ;
+; Total block memory bits         ; 32,768 / 4,065,280 ( < 1 % )                ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/12/2022 13:08:33 ;
+; Start date & time ; 06/12/2022 16:39:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Proyecto            ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 49410870398142.165506091304560         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 49410870398142.165507356424664         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testRom                           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; decoderTest                       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; controllerTest                    ;
@@ -146,12 +146,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4931 MB             ; 00:00:14                           ;
-; Fitter               ; 00:01:07     ; 1.1                     ; 7373 MB             ; 00:05:09                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4878 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.7                     ; 5285 MB             ; 00:00:06                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4956 MB             ; 00:00:15                           ;
+; Fitter               ; 00:02:57     ; 1.1                     ; 7302 MB             ; 00:13:09                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4901 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:06     ; 2.9                     ; 5329 MB             ; 00:00:12                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4744 MB             ; 00:00:01                           ;
-; Total                ; 00:01:24     ; --                      ; --                  ; 00:05:34                           ;
+; Total                ; 00:03:18     ; --                      ; --                  ; 00:13:42                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

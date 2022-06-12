@@ -114,6 +114,10 @@
 				{
 					"name" : "clk",
 					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
 				}
 			]
 		}

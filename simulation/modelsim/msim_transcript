@@ -11,10 +11,10 @@
 # vmap altera_ver ./verilog_libs/altera_ver 
 # Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v}
+# vlog -vlog01compat -work altera_ver {d:/quartus/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:42:58 on Jun 11,2022
-# vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v 
+# Start time: 13:18:05 on Jun 12,2022
+# vlog -reportprogress 300 -vlog01compat -work altera_ver d:/quartus/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
 # -- Compiling module cascade
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 23:42:59 on Jun 11,2022, Elapsed time: 0:00:01
+# End time: 13:18:05 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -104,10 +104,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap lpm_ver ./verilog_libs/lpm_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v}
+# vlog -vlog01compat -work lpm_ver {d:/quartus/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:00 on Jun 11,2022
-# vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v 
+# Start time: 13:18:05 on Jun 12,2022
+# vlog -reportprogress 300 -vlog01compat -work lpm_ver d:/quartus/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
 # -- Compiling module LPM_DEVICE_FAMILIES
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 23:43:00 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:06 on Jun 12,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -179,10 +179,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap sgate_ver ./verilog_libs/sgate_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/sgate.v}
+# vlog -vlog01compat -work sgate_ver {d:/quartus/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:01 on Jun 11,2022
-# vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/sgate.v 
+# Start time: 13:18:06 on Jun 12,2022
+# vlog -reportprogress 300 -vlog01compat -work sgate_ver d:/quartus/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
 # -- Compiling module mux21
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 23:43:01 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:06 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -232,10 +232,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap altera_mf_ver ./verilog_libs/altera_mf_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v}
+# vlog -vlog01compat -work altera_mf_ver {d:/quartus/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:01 on Jun 11,2022
-# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v 
+# Start time: 13:18:06 on Jun 12,2022
+# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver d:/quartus/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
 # -- Compiling module ALTERA_MF_HINT_EVALUATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 23:43:03 on Jun 11,2022, Elapsed time: 0:00:02
+# End time: 13:18:07 on Jun 12,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -373,10 +373,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
 # Modifying modelsim.ini
-# vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_lnsim.sv}
+# vlog -sv -work altera_lnsim_ver {d:/quartus/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:04 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_lnsim.sv 
+# Start time: 13:18:07 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work altera_lnsim_ver d:/quartus/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
 # -- Compiling module generic_pll
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 23:43:06 on Jun 11,2022, Elapsed time: 0:00:02
+# End time: 13:18:08 on Jun 12,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -467,10 +467,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap cyclonev_ver ./verilog_libs/cyclonev_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_ver {d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:07 on Jun 11,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
+# Start time: 13:18:09 on Jun 12,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -483,20 +483,20 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 23:43:10 on Jun 11,2022, Elapsed time: 0:00:03
+# End time: 13:18:10 on Jun 12,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 20
-# vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_ver {d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:10 on Jun 11,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
+# Start time: 13:18:10 on Jun 12,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 23:43:12 on Jun 11,2022, Elapsed time: 0:00:02
+# End time: 13:18:12 on Jun 12,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_atoms.v}
+# vlog -vlog01compat -work cyclonev_ver {d:/quartus/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:12 on Jun 11,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_atoms.v 
+# Start time: 13:18:12 on Jun 12,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver d:/quartus/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS_HIGH
@@ -635,7 +635,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 23:43:14 on Jun 11,2022, Elapsed time: 0:00:02
+# End time: 13:18:12 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -644,18 +644,18 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap cyclonev_hssi_ver ./verilog_libs/cyclonev_hssi_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_hssi_ver {d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:15 on Jun 11,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
+# Start time: 13:18:12 on Jun 12,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 23:43:17 on Jun 11,2022, Elapsed time: 0:00:02
+# End time: 13:18:14 on Jun 12,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
+# vlog -vlog01compat -work cyclonev_hssi_ver {d:/quartus/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:17 on Jun 11,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
+# Start time: 13:18:14 on Jun 12,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver d:/quartus/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
 # -- Compiling module cyclonev_hssi_8g_tx_pcs
@@ -754,7 +754,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 23:43:18 on Jun 11,2022, Elapsed time: 0:00:01
+# End time: 13:18:14 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -763,10 +763,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap cyclonev_pcie_hip_ver ./verilog_libs/cyclonev_pcie_hip_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_pcie_hip_ver {d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:20 on Jun 11,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
+# Start time: 13:18:14 on Jun 12,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver d:/quartus/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -775,18 +775,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 23:43:23 on Jun 11,2022, Elapsed time: 0:00:03
+# End time: 13:18:16 on Jun 12,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 12
-# vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
+# vlog -vlog01compat -work cyclonev_pcie_hip_ver {d:/quartus/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:23 on Jun 11,2022
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
+# Start time: 13:18:16 on Jun 12,2022
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver d:/quartus/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 23:43:23 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:16 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -798,202 +798,202 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/MainDecoder.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/MainDecoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:23 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/MainDecoder.sv 
+# Start time: 13:18:16 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/MainDecoder.sv 
 # -- Compiling module MainDecoder
 # 
 # Top level modules:
 # 	MainDecoder
-# End time: 23:43:23 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:16 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/ALUDecoder.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/ALUDecoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:24 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/ALUDecoder.sv 
+# Start time: 13:18:16 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/ALUDecoder.sv 
 # -- Compiling module ALUDecoder
 # 
 # Top level modules:
 # 	ALUDecoder
-# End time: 23:43:24 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:16 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:24 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv 
+# Start time: 13:18:16 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/Decoder.sv 
 # -- Compiling module Decoder
 # 
 # Top level modules:
 # 	Decoder
-# End time: 23:43:24 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:16 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/condlogic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:24 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv 
+# Start time: 13:18:16 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/condlogic.sv 
 # -- Compiling module condlogic
 # -- Compiling module condcheck
 # 
 # Top level modules:
 # 	condlogic
-# End time: 23:43:24 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:16 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:24 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv 
+# Start time: 13:18:16 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/controller.sv 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 23:43:24 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/flopenr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:24 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/flopenr.sv 
 # -- Compiling module flopenr
 # 
 # Top level modules:
 # 	flopenr
-# End time: 23:43:24 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/suma.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/suma.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:24 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/suma.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/suma.sv 
 # -- Compiling module suma
 # 
 # Top level modules:
 # 	suma
-# End time: 23:43:24 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/alu.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:25 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/alu.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 23:43:25 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/mux_2.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/mux_2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:25 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/mux_2.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/mux_2.sv 
 # -- Compiling module mux_2
 # 
 # Top level modules:
 # 	mux_2
-# End time: 23:43:25 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/extend.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/extend.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:25 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/extend.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/extend.sv 
 # -- Compiling module extend
 # 
 # Top level modules:
 # 	extend
-# End time: 23:43:25 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopr.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/flopr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:25 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopr.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/flopr.sv 
 # -- Compiling module flopr
 # 
 # Top level modules:
 # 	flopr
-# End time: 23:43:25 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataPath.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataPath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:25 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataPath.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataPath.sv 
 # -- Compiling module dataPath
 # 
 # Top level modules:
 # 	dataPath
-# End time: 23:43:25 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/armSingle.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/armSingle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:25 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/armSingle.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/armSingle.sv 
 # -- Compiling module armSingle
 # 
 # Top level modules:
 # 	armSingle
-# End time: 23:43:25 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topARM.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:25 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topARM.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARM.sv 
 # -- Compiling module topARM
 # 
 # Top level modules:
 # 	topARM
-# End time: 23:43:26 on Jun 11,2022, Elapsed time: 0:00:01
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/pcLogic.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/pcLogic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:26 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/pcLogic.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/pcLogic.sv 
 # -- Compiling module pcLogic
 # 
 # Top level modules:
 # 	pcLogic
-# End time: 23:43:26 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/instrucMem.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/instrucMem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:26 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/instrucMem.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/instrucMem.sv 
 # -- Compiling module instrucMem
 # 
 # Top level modules:
 # 	instrucMem
-# End time: 23:43:26 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataMem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:26 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataMem.sv 
 # -- Compiling module dataMem
 # 
 # Top level modules:
 # 	dataMem
-# End time: 23:43:26 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/registerFile.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/registerFile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:26 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/registerFile.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/registerFile.sv 
 # -- Compiling module registerFile
 # 
 # Top level modules:
 # 	registerFile
-# End time: 23:43:26 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/MartinPC/Documents/Semestre\ 1\ -\ 2022/Taller/LAB\ 5/ProyectoFinal {C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topARMTest.sv}
+# vlog -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal {C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARMTest.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:43:26 on Jun 11,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal" C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topARMTest.sv 
+# Start time: 13:18:17 on Jun 12,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal" C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARMTest.sv 
 # -- Compiling module topARMTest
 # 
 # Top level modules:
 # 	topARMTest
-# End time: 23:43:26 on Jun 11,2022, Elapsed time: 0:00:00
+# End time: 13:18:17 on Jun 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  topARMTest
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" topARMTest 
-# Start time: 23:43:26 on Jun 11,2022
+# Start time: 13:18:18 on Jun 12,2022
 # Loading sv_std.std
 # Loading work.topARMTest
 # Loading work.topARM
@@ -1015,11 +1015,11 @@
 # Loading work.alu
 # Loading work.instrucMem
 # Loading work.dataMem
-# ** Warning: (vsim-3017) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topARM.sv(14): [TFMPC] - Too few port connections. Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /topARMTest/cpu/dmem File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv
-# ** Warning: (vsim-3015) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topARM.sv(14): [PCDPC] - Port size (33) does not match connection size (32) for port 'rd'. The port definition is at: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /topARMTest/cpu/dmem File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv
-# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topARM.sv(14): [TFMPC] - Missing connection for port 'chars'.
+# ** Warning: (vsim-3017) C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARM.sv(14): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /topARMTest/cpu/dmem File: C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataMem.sv
+# ** Warning: (vsim-3015) C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARM.sv(14): [PCDPC] - Port size (33) does not match connection size (32) for port 'rd'. The port definition is at: C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataMem.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /topARMTest/cpu/dmem File: C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataMem.sv
+# ** Warning: (vsim-3722) C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARM.sv(14): [TFMPC] - Missing connection for port 'chars'.
 # 
 # add wave *
 # view structure
@@ -1027,16 +1027,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Break key hit
-# Simulation stop requested.
-restart -f
-# ** Warning: (vsim-3017) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topARM.sv(14): [TFMPC] - Too few port connections. Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /topARMTest/cpu/dmem File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv
-# ** Warning: (vsim-3015) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topARM.sv(14): [PCDPC] - Port size (33) does not match connection size (32) for port 'rd'. The port definition is at: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /topARMTest/cpu/dmem File: C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/dataMem.sv
-# ** Warning: (vsim-3722) C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/topARM.sv(14): [TFMPC] - Missing connection for port 'chars'.
-run -all
-# Break key hit
-# Simulation stop requested.
-# End time: 23:51:27 on Jun 11,2022, Elapsed time: 0:08:01
-# Errors: 0, Warnings: 6
+# Can't move the Now cursor.
+add wave -position end  sim:/topARMTest/chars
