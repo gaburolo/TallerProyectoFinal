@@ -4,271 +4,115 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "WriteData[0]",
+					"name" : "R[0]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[1]",
+					"name" : "R[1]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[2]",
+					"name" : "R[2]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[3]",
+					"name" : "R[3]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[4]",
+					"name" : "R[4]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[5]",
+					"name" : "R[5]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[6]",
+					"name" : "R[6]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[7]",
+					"name" : "R[7]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[8]",
+					"name" : "G[0]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[9]",
+					"name" : "G[1]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[10]",
+					"name" : "G[2]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[11]",
+					"name" : "G[3]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[12]",
+					"name" : "G[4]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[13]",
+					"name" : "G[5]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[14]",
+					"name" : "G[6]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[15]",
+					"name" : "G[7]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[16]",
+					"name" : "B[0]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[17]",
+					"name" : "B[1]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[18]",
+					"name" : "B[2]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[19]",
+					"name" : "B[3]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[20]",
+					"name" : "B[4]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[21]",
+					"name" : "B[5]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[22]",
+					"name" : "B[6]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[23]",
+					"name" : "B[7]",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[24]",
+					"name" : "hsync",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[25]",
+					"name" : "vsync",
 					"strict" : false
 				},
 				{
-					"name" : "WriteData[26]",
-					"strict" : false
-				},
-				{
-					"name" : "WriteData[27]",
-					"strict" : false
-				},
-				{
-					"name" : "WriteData[28]",
-					"strict" : false
-				},
-				{
-					"name" : "WriteData[29]",
-					"strict" : false
-				},
-				{
-					"name" : "WriteData[30]",
-					"strict" : false
-				},
-				{
-					"name" : "WriteData[31]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[0]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[1]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[2]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[3]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[4]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[5]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[6]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[7]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[8]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[9]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[10]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[11]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[12]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[13]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[14]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[15]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[16]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[17]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[18]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[19]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[20]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[21]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[22]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[23]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[24]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[25]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[26]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[27]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[28]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[29]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[30]",
-					"strict" : false
-				},
-				{
-					"name" : "DataAdr[31]",
-					"strict" : false
-				},
-				{
-					"name" : "MemWrite",
+					"name" : "vgaclk",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "rst",
 					"strict" : false
 				}
 			]
