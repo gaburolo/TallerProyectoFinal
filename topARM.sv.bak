@@ -1,0 +1,14 @@
+module topARM(input logic clk, rst,
+					output logic [31:0] WriteData, DataAdr,
+					output logic MemWrite, 
+					output logic  [7:0] chars [639:0]);
+					
+	logic [31:0] PC, Instr, ReadData;
+	//Creacion de microprocesador
+	arm armSingle(clk, rst, PC, Instr, MemWrite, DataAdr,
+	WriteData, ReadData);
+	
+	//Creacion de las memorias
+	instrucMem imem(PC, Instr);
+	dataMem dmem(clk, MemWrite, DataAdr, WriteData, ReadData, chars);
+endmodule

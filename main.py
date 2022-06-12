@@ -10,17 +10,19 @@ def createMem(label, table):
     print(table)
     while(cont<640):
         if 639!=cont:
-            table=table+str(32)+"\n"
+            table=table+str(20)+"\n"
         else:
-            table=table+str(32)
+            table=table+str(20)
         cont+=1
    
     return table
 
 def ascii_convert(text):
     ascii_values = []
+    value=""
     for character in text:
-        ascii_values.append(ord(character))
+        value=format(ord(character),"x")
+        ascii_values.append(value)
     return ascii_values
 
 def file_Mem(text):
@@ -37,4 +39,5 @@ textAscii=ascii_convert(text)
 table = createMem(textAscii, table)
 finalText=table
 file_Mem(finalText)
+
 

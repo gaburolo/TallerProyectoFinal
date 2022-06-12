@@ -5,7 +5,7 @@ module flopr #(parameter N = 8)(
 	);
 
 	always_ff @(posedge clk, posedge reset)
-		if (reset) q <= 0;
-		else q <= d;
+		if (reset) q = 0;
+		else q = d;
 		
 endmodule 
