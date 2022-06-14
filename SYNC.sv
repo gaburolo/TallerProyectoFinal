@@ -14,24 +14,6 @@ module SYNC(
 	input logic VGA_CLK_IN,
 	input reg[255:0] txt1,
 	input reg[255:0] txt2,
-	input reg[255:0] txt3,
-	input reg[255:0] txt4,
-	input reg[255:0] txt5,
-	input reg[255:0] txt6,
-	input reg[255:0] txt7,
-	input reg[255:0] txt8,
-	input reg[255:0] txt9,
-	input reg[255:0] txt10,
-	input reg[255:0] txt11,
-	input reg[255:0] txt12,
-	input reg[255:0] txt13,
-	input reg[255:0] txt14,
-	input reg[255:0] txt15,
-	input reg[255:0] txt16,
-	input reg[255:0] txt17,
-	input reg[255:0] txt18,
-	input reg[255:0] txt19,
-	input reg[255:0] txt20,
 	output logic VGA_CLK_OUT,
 	output logic o_hsync,
 	output logic o_vsync,
@@ -51,46 +33,10 @@ module SYNC(
 	
 	wire[255:0] text1 = txt1;
 	wire[255:0] text2 = txt2;
-	wire[255:0] text3 = txt3;
-	wire[255:0] text4 = txt4;
-	wire[255:0] text5 = txt5;
-	wire[255:0] text6 = txt6;
-	wire[255:0] text7 = txt7;
-	wire[255:0] text8 = txt8;
-	wire[255:0] text9 = txt9;
-	wire[255:0] text10 = txt10;
-	wire[255:0] text11 = txt11;
-	wire[255:0] text12 = txt12;
-	wire[255:0] text13 = txt13;
-	wire[255:0] text14 = txt14;
-	wire[255:0] text15 = txt15;
-	wire[255:0] text16 = txt16;
-	wire[255:0] text17 = txt17;
-	wire[255:0] text18 = txt18;
-	wire[255:0] text19 = txt19;
-	wire[255:0] text20 = txt20;
 	
 	
-	Pixel_On_Text2 t1(VGA_CLK_IN, text1, 335, 77, sx, sy, pixel);
-	Pixel_On_Text2 t2(VGA_CLK_IN, text2, 335, 97, sx, sy, pixel2);
-	Pixel_On_Text2 t3(VGA_CLK_IN, text3, 335, 117, sx, sy, pixel3);
-	Pixel_On_Text2 t4(VGA_CLK_IN, text4, 335, 137, sx, sy, pixel4);
-	Pixel_On_Text2 t5(VGA_CLK_IN, text5, 335, 157, sx, sy, pixel5);
-	Pixel_On_Text2 t6(VGA_CLK_IN, text6, 335, 177, sx, sy, pixel6);
-	Pixel_On_Text2 t7(VGA_CLK_IN, text7, 335, 197, sx, sy, pixel7);
-	Pixel_On_Text2 t8(VGA_CLK_IN, text8, 335, 217, sx, sy, pixel8);
-	Pixel_On_Text2 t9(VGA_CLK_IN, text9, 335, 237, sx, sy, pixel9);
-	Pixel_On_Text2 t10(VGA_CLK_IN, text10, 335, 257, sx, sy, pixel10);
-	Pixel_On_Text2 t11(VGA_CLK_IN, text11, 335, 277, sx, sy, pixel11);
-	Pixel_On_Text2 t12(VGA_CLK_IN, text12, 335, 297, sx, sy, pixel12);
-	Pixel_On_Text2 t13(VGA_CLK_IN, text13, 335, 317, sx, sy, pixel13);
-	Pixel_On_Text2 t14(VGA_CLK_IN, text14, 335, 337, sx, sy, pixel14);
-	Pixel_On_Text2 t15(VGA_CLK_IN, text15, 335, 357, sx, sy, pixel15);
-	Pixel_On_Text2 t16(VGA_CLK_IN, text16, 335, 377, sx, sy, pixel16);
-	Pixel_On_Text2 t17(VGA_CLK_IN, text17, 335, 397, sx, sy, pixel17);
-	Pixel_On_Text2 t18(VGA_CLK_IN, text18, 335, 417, sx, sy, pixel18);
-	Pixel_On_Text2 t19(VGA_CLK_IN, text19, 335, 437, sx, sy, pixel19);
-	Pixel_On_Text2 t20(VGA_CLK_IN, text20, 335, 457, sx, sy, pixel20);
+	printText t1(VGA_CLK_IN, text1, 335, 77, sx, sy, pixel);
+	printText t2(VGA_CLK_IN, text2, 335, 97, sx, sy, pixel2);
 	
 	//FOR DOBLE
 	always @(posedge VGA_CLK_IN)
@@ -145,11 +91,7 @@ module SYNC(
 					end
 				else //zona util
 					begin
-						if(pixel == 1 || pixel2 == 1 || pixel3 == 1 || pixel4 == 1 || pixel5 == 1 
-						|| pixel6 == 1 || pixel7 == 1 || pixel8 == 1 || pixel9 == 1 || pixel10 == 1
-						|| pixel11 == 1 || pixel12 == 1 || pixel13 == 1 || pixel14 == 1 || pixel15 == 1
-						|| pixel16 == 1 || pixel17 == 1 || pixel18 == 1 || pixel19 == 1 || pixel20 == 1) 
-						{color_R,color_G,color_B} <= `BLACK;
+						if(pixel == 1 || pixel2 == 1) {color_R,color_G,color_B} <= `BLACK;
 						else {color_R,color_G,color_B} <= `WHITE;
 					end
 			end

@@ -1,5 +1,5 @@
 Flow report for Proyecto
-Fri Jun 10 21:48:07 2022
+Mon Jun 13 19:16:14 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Jun 10 21:48:07 2022       ;
+; Flow Status                     ; Successful - Mon Jun 13 19:16:14 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Proyecto                                    ;
 ; Top-level Entity Name           ; main                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 253 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 85                                          ;
-; Total pins                      ; 28 / 457 ( 6 % )                            ;
+; Logic utilization (in ALMs)     ; 1,133 / 32,070 ( 4 % )                      ;
+; Total registers                 ; 1413                                        ;
+; Total pins                      ; 29 / 457 ( 6 % )                            ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 327,680 / 4,065,280 ( 8 % )                 ;
+; Total block memory bits         ; 32,768 / 4,065,280 ( < 1 % )                ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/10/2022 21:46:54 ;
+; Start date & time ; 06/13/2022 19:12:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Proyecto            ;
 +-------------------+---------------------+
@@ -79,35 +79,58 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 49410870398142.165491921421112         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 49410870398142.165516915420560         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testRom                           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; decoderTest                       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; controllerTest                    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; datapathTest                      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; dataMemTest                       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; aluTest                           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; instrucMemTest                    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; topARMTest                        ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; extendTest                        ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; registerFileTest                  ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; controllerTest                         ; --            ; --          ; eda_simulation                    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; topARMTest                             ; --            ; --          ; eda_simulation                    ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation                    ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim (SystemVerilog)               ; <None>        ; --          ; --                                ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_FILE                  ; testRom.sv                             ; --            ; --          ; testRom                           ;
 ; EDA_TEST_BENCH_FILE                  ; decoderTest.sv                         ; --            ; --          ; decoderTest                       ;
 ; EDA_TEST_BENCH_FILE                  ; controllerTest.sv                      ; --            ; --          ; controllerTest                    ;
+; EDA_TEST_BENCH_FILE                  ; datapathTest.sv                        ; --            ; --          ; datapathTest                      ;
+; EDA_TEST_BENCH_FILE                  ; dataMemTest.sv                         ; --            ; --          ; dataMemTest                       ;
+; EDA_TEST_BENCH_FILE                  ; aluTest.sv                             ; --            ; --          ; aluTest                           ;
 ; EDA_TEST_BENCH_FILE                  ; instrucMemTest.sv                      ; --            ; --          ; instrucMemTest                    ;
+; EDA_TEST_BENCH_FILE                  ; topARMTest.sv                          ; --            ; --          ; topARMTest                        ;
+; EDA_TEST_BENCH_FILE                  ; extendTest.sv                          ; --            ; --          ; extendTest                        ;
+; EDA_TEST_BENCH_FILE                  ; registerFileTest.sv                    ; --            ; --          ; registerFileTest                  ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; testRom                                ; --            ; --          ; testRom                           ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; decoderTest                            ; --            ; --          ; decoderTest                       ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; controllerTest                         ; --            ; --          ; controllerTest                    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; datapathTest                           ; --            ; --          ; datapathTest                      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; dataMemTest                            ; --            ; --          ; dataMemTest                       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; aluTest                                ; --            ; --          ; aluTest                           ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; instrucMemTest                         ; --            ; --          ; instrucMemTest                    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; topARMTest                             ; --            ; --          ; topARMTest                        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; extendTest                             ; --            ; --          ; extendTest                        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; registerFileTest                       ; --            ; --          ; registerFileTest                  ;
 ; EDA_TEST_BENCH_NAME                  ; testRom                                ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; instrucMemTest                         ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; decoderTest                            ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; controllerTest                         ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; aluTest                                ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; dataMemTest                            ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; extendTest                             ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; registerFileTest                       ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; datapathTest                           ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; topARMTest                             ; --            ; --          ; eda_simulation                    ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
-; MISC_FILE                            ; DataROM_bb.v                           ; --            ; --          ; --                                ;
 ; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; main        ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; main        ; Top                               ;
 ; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; main        ; Top                               ;
@@ -123,12 +146,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4938 MB             ; 00:00:14                           ;
-; Fitter               ; 00:00:53     ; 1.1                     ; 7373 MB             ; 00:03:46                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4883 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.6                     ; 5293 MB             ; 00:00:06                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4732 MB             ; 00:00:01                           ;
-; Total                ; 00:01:09     ; --                      ; --                  ; 00:04:11                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4945 MB             ; 00:00:15                           ;
+; Fitter               ; 00:02:59     ; 1.1                     ; 7281 MB             ; 00:13:39                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4891 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:22     ; 1.5                     ; 5332 MB             ; 00:00:30                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4750 MB             ; 00:00:01                           ;
+; Total                ; 00:03:35     ; --                      ; --                  ; 00:14:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,3 +1,6 @@
-Warning (10273): Verilog HDL warning at MainDecoder.sv(28): extended using "x" or "z" File: C:/Users/Admin/Desktop/Test/TallerProyectoFinal/MainDecoder.sv Line: 28
-Warning (10273): Verilog HDL warning at ALUDecoder.sv(15): extended using "x" or "z" File: C:/Users/Admin/Desktop/Test/TallerProyectoFinal/ALUDecoder.sv Line: 15
-Warning (10273): Verilog HDL warning at ALUDecoder.sv(17): extended using "x" or "z" File: C:/Users/Admin/Desktop/Test/TallerProyectoFinal/ALUDecoder.sv Line: 17
+Warning (10273): Verilog HDL warning at MainDecoder.sv(28): extended using "x" or "z" File: C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/MainDecoder.sv Line: 28
+Warning (10273): Verilog HDL warning at ALUDecoder.sv(15): extended using "x" or "z" File: C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/ALUDecoder.sv Line: 15
+Warning (10273): Verilog HDL warning at ALUDecoder.sv(17): extended using "x" or "z" File: C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/ALUDecoder.sv Line: 17
+Warning (10268): Verilog HDL information at alu.sv(22): always construct contains both blocking and non-blocking assignments File: C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/alu.sv Line: 22
+Warning (10273): Verilog HDL warning at dataMemTest.sv(20): extended using "x" or "z" File: C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataMemTest.sv Line: 20
+Warning (10273): Verilog HDL warning at extend.sv(14): extended using "x" or "z" File: C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/extend.sv Line: 14

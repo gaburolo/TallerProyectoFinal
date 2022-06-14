@@ -1,53 +1,68 @@
-top="""-- Copyright (C) 2021  Intel Corporation. All rights reserved.
--- Your use of Intel Corporation's design tools, logic functions 
--- and other software and tools, and any partner logic 
--- functions, and any output files from any of the foregoing 
--- (including device programming or simulation files), and any 
--- associated documentation or information are expressly subject 
--- to the terms and conditions of the Intel Program License 
--- Subscription Agreement, the Intel Quartus Prime License Agreement,
--- the Intel FPGA IP License Agreement, or other applicable license
--- agreement, including, without limitation, that your use is for
--- the sole purpose of programming logic devices manufactured by
--- Intel and sold by Intel or its authorized distributors.  Please
--- refer to the applicable agreement for further details, at
--- https://fpgasoftware.intel.com/eula.
-
--- Quartus Prime generated Memory Initialization File (.mif)
-
-WIDTH=8;
-DEPTH=256;
-
-ADDRESS_RADIX=UNS;
-DATA_RADIX=UNS;
-
-CONTENT BEGIN"""
-bottom="""END;"""
-
+import os
+import sys
 table=""
-
+register="""00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000"""
 def createMem(label, table):
     cont=0
     for i in label:
-        table=table+"	"+str(cont)+"    :   "+str(i)+"\n"
-        cont=cont+1
-    table=table+"	["+str(cont)+"...255]"+"    :   0"
+        table=table+str(i)+"\n"
+        cont+=1
+    print(table)
+    while(cont<120):
+        if 120!=cont:
+            table=table+str(20)+"\n"
+        else:
+            table=table+str(20)
+        cont+=1
+   
     return table
 
 def ascii_convert(text):
     ascii_values = []
+    value=""
     for character in text:
-        ascii_values.append(ord(character))
+        value=format(ord(character),"x")
+        ascii_values.append(value)
     return ascii_values
 
 def file_Mem(text):
-    with open('MemoryInit.mif', 'w') as f:
+    path = os.path.join(sys.path[0]+'\\simulation\\modelsim\\rom.mem')
+    path_reg = os.path.join(sys.path[0]+'\\simulation\\modelsim\\regData.mem')
+    with open('rom.mem', 'w') as f:
         f.write(text)
         f.close()
+    with open(path, 'w') as f2:
+        f2.write(text)
+        f2.close()
+    with open('regData.mem', 'w') as f:
+        f.write(register)
+        f.close()
+    with open(path_reg, 'w') as f2:
+        f2.write(register)
+        f2.close()
+    
 
+
+    
 text = input("Digite la frase:")
 textAscii=[]
-textAscii=ascii_convert(text)
+textAscii=ascii_convert(text.upper())
 table = createMem(textAscii, table)
-finalText=top+"\n"+table+"\n"+bottom
+finalText=table
 file_Mem(finalText)
+
+

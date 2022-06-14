@@ -7,208 +7,515 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/simulation/modelsim
-vALUDecoder
+Z0 dC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/simulation/modelsim
+valu
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1654189154
+Z2 !s110 1655061497
 !i10b 1
-!s100 M8aAeb4XnDY5jI?So90QY3
-IkZTNUQ6;Y3_Ag0>OlG]bk2
+!s100 [ADh>l>V6NnU<79TCIP@f2
+I0XXz0=`kSJ0D@DQTGD95G1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 ALUDecoder_sv_unit
+!s105 alu_sv_unit
 S1
 R0
-Z4 w1653872177
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/ALUDecoder.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/ALUDecoder.sv
+Z4 w1655058679
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/alu.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/alu.sv
 L0 1
 Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1654189154.000000
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/ALUDecoder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/ALUDecoder.sv|
+Z6 !s108 1655061497.000000
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/alu.sv|
 !i113 1
 Z7 o-sv -work work
-Z8 !s92 -sv -work work {+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal}
+Z8 !s92 -sv -work work +incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal
 Z9 tCvgOpt 0
+vALUDecoder
+R1
+Z10 !s110 1655061496
+!i10b 1
+!s100 M8aAeb4XnDY5jI?So90QY3
+IVBeWCnAcUel6goPOkH`L:2
+R3
+!s105 ALUDecoder_sv_unit
+S1
+R0
+Z11 w1655058653
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/ALUDecoder.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/ALUDecoder.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z12 !s108 1655061496.000000
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/ALUDecoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/ALUDecoder.sv|
+!i113 1
+R7
+R8
+R9
 n@a@l@u@decoder
-vcondcheck
+varmSingle
 R1
 R2
 !i10b 1
-!s100 W<dSU8d3XlPb5`T=Io]5f2
-IjHfG>@5I:MIDKJzT83FLE3
+!s100 J^:Rh;N9e392F5_j;>WFc3
+I9K:b[ZEETibEYWT3;7ijL3
 R3
-Z10 !s105 condlogic_sv_unit
+!s105 armSingle_sv_unit
 S1
 R0
-Z11 w1654015942
-Z12 8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv
-Z13 FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv
-L0 28
+R4
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/armSingle.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/armSingle.sv
+L0 1
 R5
 r1
 !s85 0
 31
 R6
-Z14 !s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv|
-Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/condlogic.sv|
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/armSingle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/armSingle.sv|
+!i113 1
+R7
+R8
+R9
+narm@single
+vcondcheck
+R1
+R10
+!i10b 1
+!s100 W<dSU8d3XlPb5`T=Io]5f2
+I[D0a]=Ik6=kIGo:W08P<U2
+R3
+Z13 !s105 condlogic_sv_unit
+S1
+R0
+R11
+Z14 8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/condlogic.sv
+Z15 FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/condlogic.sv
+L0 28
+R5
+r1
+!s85 0
+31
+R12
+Z16 !s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/condlogic.sv|
+Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/condlogic.sv|
 !i113 1
 R7
 R8
 R9
 vcondlogic
 R1
-R2
+R10
 !i10b 1
 !s100 d8_0JIXmIlZ]CWGD3473D2
-I=_nlV_9kI6Ke9<P6T9Of`2
+IlIEmY0[b5A=VgJb]of5SE3
 R3
-R10
+R13
 S1
 R0
 R11
-R12
-R13
+R14
+R15
 L0 1
 R5
 r1
 !s85 0
 31
-R6
-R14
-R15
+R12
+R16
+R17
 !i113 1
 R7
 R8
 R9
 vcontroller
 R1
-Z16 !s110 1654189155
+R2
 !i10b 1
-!s100 9YP59daZ6NHinzenJ?IOm1
-I6LF4ELiO<X?AVY2j`KEfY1
+!s100 Xe0LhDzZfY`X<Im0Af5UB0
+I^CB;ZG4XR[^m6MkKLXXAb0
 R3
 !s105 controller_sv_unit
 S1
 R0
-w1654187362
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv
+R4
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/controller.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/controller.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/controller.sv|
+!i113 1
+R7
+R8
+R9
+vdataMem
+R1
+R2
+!i10b 1
+!s100 cP3I0UDAXJzh:o<>^@ol@2
+I<H56>No7N9cYU[BiIFLDL0
+R3
+!s105 dataMem_sv_unit
+S1
+R0
+R4
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataMem.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataMem.sv
 L0 1
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controller.sv|
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataMem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataMem.sv|
 !i113 1
 R7
 R8
 R9
-vcontrollerTest
+ndata@mem
+vdataPath
 R1
-R16
+R2
 !i10b 1
-!s100 Obo;eboOJaY8GIgAF^iRm2
-IYP?XF05QW;UkRZ2^<eA[m3
+!s100 :Yl7kZhV78mVkbWjEm]U;2
+ISFSG]aEZIRV2Z3LOFQ]Q;3
 R3
-!s105 controllerTest_sv_unit
+!s105 dataPath_sv_unit
 S1
 R0
-w1654189101
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controllerTest.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controllerTest.sv
+R4
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataPath.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataPath.sv
 L0 1
 R5
 r1
 !s85 0
 31
-Z17 !s108 1654189155.000000
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controllerTest.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/controllerTest.sv|
+R6
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataPath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/dataPath.sv|
 !i113 1
 R7
 R8
 R9
-ncontroller@test
+ndata@path
 vDecoder
 R1
-R2
+R10
 !i10b 1
-!s100 PPjzA0bbBHiOBnR_LOf2?3
-I]L:<NdkSQoeD[NL87S[Yo2
+!s100 NO`UiKgEkgKC7eBe6aHi02
+Ic?E9?hPKM3jZ;SnjNKd_Q3
 R3
 !s105 Decoder_sv_unit
 S1
 R0
-w1653872784
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv
+R4
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/Decoder.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/Decoder.sv
 L0 1
 R5
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/Decoder.sv|
+R12
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/Decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/Decoder.sv|
 !i113 1
 R7
 R8
 R9
 n@decoder
-vflopenr
+vextend
 R1
-R16
+R2
 !i10b 1
-!s100 `9]>0?bSgK2lc2W0M33I[0
-I6nXP_bjWBLcIE7iMQV^_V3
+!s100 VXRlo4ZOdk:XiZnHzP2HG1
+I398UF_=bQ5JiAj[OoVzAQ1
 R3
-!s105 flopenr_sv_unit
+!s105 extend_sv_unit
 S1
 R0
-w1654186146
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv
+R4
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/extend.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/extend.sv
 L0 1
 R5
 r1
 !s85 0
 31
-R17
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/flopenr.sv|
+R6
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/extend.sv|
 !i113 1
 R7
 R8
 R9
-vMainDecoder
+vflopenr
 R1
-!s110 1654189153
+R2
 !i10b 1
-!s100 96@b]n`bTd>3e2z7dzHFV2
-I]Pl6=WN3ha5SHlV_Mc;kX3
+!s100 `9]>0?bSgK2lc2W0M33I[0
+IMZfM9c68gCI<?U:IDaBL21
 R3
-!s105 MainDecoder_sv_unit
+!s105 flopenr_sv_unit
 S1
 R0
-R4
-8C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/MainDecoder.sv
-FC:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/MainDecoder.sv
+R11
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/flopenr.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/flopenr.sv
 L0 1
 R5
 r1
 !s85 0
 31
-!s108 1654189153.000000
-!s107 C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/MainDecoder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal|C:/Users/MartinPC/Documents/Semestre 1 - 2022/Taller/LAB 5/ProyectoFinal/MainDecoder.sv|
+R6
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/flopenr.sv|
+!i113 1
+R7
+R8
+R9
+vflopr
+R1
+R2
+!i10b 1
+!s100 QT>k0ePAE8iV^H]0GBG;73
+I:OUlU_BOScXZ5j<KTQ2VO3
+R3
+!s105 flopr_sv_unit
+S1
+R0
+R4
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/flopr.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/flopr.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/flopr.sv|
+!i113 1
+R7
+R8
+R9
+vinstrucMem
+R1
+R2
+!i10b 1
+!s100 QjMV^[2=RKGFlRA09zHEh3
+I703dj8lM_>JPDFJ7RlI;:1
+R3
+!s105 instrucMem_sv_unit
+S1
+R0
+R11
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/instrucMem.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/instrucMem.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/instrucMem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/instrucMem.sv|
+!i113 1
+R7
+R8
+R9
+ninstruc@mem
+vMainDecoder
+R1
+R10
+!i10b 1
+!s100 96@b]n`bTd>3e2z7dzHFV2
+I@98nh[^gLTJ[=47bM>n_X2
+R3
+!s105 MainDecoder_sv_unit
+S1
+R0
+R11
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/MainDecoder.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/MainDecoder.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/MainDecoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/MainDecoder.sv|
 !i113 1
 R7
 R8
 R9
 n@main@decoder
+vmux_2
+R1
+R2
+!i10b 1
+!s100 4Y<[:Mc00jieJQ]EonImF0
+IXf:=^MJn3HQJUz8C_ddl;0
+R3
+!s105 mux_2_sv_unit
+S1
+R0
+R4
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/mux_2.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/mux_2.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/mux_2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/mux_2.sv|
+!i113 1
+R7
+R8
+R9
+vpcLogic
+R1
+R2
+!i10b 1
+!s100 <]UI6CP`zPg:4FAg1DN_;3
+IH=[zT0FLj]mTTGl4XdB:d0
+R3
+!s105 pcLogic_sv_unit
+S1
+R0
+R4
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/pcLogic.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/pcLogic.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/pcLogic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/pcLogic.sv|
+!i113 1
+R7
+R8
+R9
+npc@logic
+vregisterFile
+R1
+R2
+!i10b 1
+!s100 eXDh[[>38>HDTD^i5fRE03
+IA5l5TLO@Q]O2PmBIKS=VC3
+R3
+!s105 registerFile_sv_unit
+S1
+R0
+R4
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/registerFile.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/registerFile.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/registerFile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/registerFile.sv|
+!i113 1
+R7
+R8
+R9
+nregister@file
+vsuma
+R1
+R2
+!i10b 1
+!s100 2^_Ni0IOZ1C8mkfE2=AAi2
+IT4c0jCV;jVVN4_K2Kg4eQ2
+R3
+!s105 suma_sv_unit
+S1
+R0
+Z18 w1655058680
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/suma.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/suma.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/suma.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/suma.sv|
+!i113 1
+R7
+R8
+R9
+vtopARM
+R1
+R2
+!i10b 1
+!s100 @CR;Jde4?@kA;W0kaMnz:2
+IX?CO<J3V?X0Y6:?EejmjX0
+R3
+!s105 topARM_sv_unit
+S1
+R0
+R18
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARM.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARM.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARM.sv|
+!i113 1
+R7
+R8
+R9
+ntop@a@r@m
+vtopARMTest
+R1
+R2
+!i10b 1
+!s100 f^^:]akPMYaS_2hd_NHO=1
+I]]k=zfQ<kTD49:@GV@=kY3
+R3
+!s105 topARMTest_sv_unit
+S1
+R0
+R18
+8C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARMTest.sv
+FC:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARMTest.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARMTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal|C:/Users/Admin/Desktop/CpuTotal/TallerProyectoFinal/topARMTest.sv|
+!i113 1
+R7
+R8
+R9
+ntop@a@r@m@test

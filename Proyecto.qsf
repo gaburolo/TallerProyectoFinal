@@ -52,17 +52,12 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
-set_global_assignment -name MIF_FILE MemoryInit.mif
-set_global_assignment -name QIP_FILE DataROM.qip
-set_global_assignment -name SYSTEMVERILOG_FILE counterMem.sv
-set_global_assignment -name SYSTEMVERILOG_FILE topROM.sv
-set_global_assignment -name SYSTEMVERILOG_FILE testRom.sv
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH controllerTest -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH topARMTest -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME testRom -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testRom
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testRom -section_id testRom
@@ -71,7 +66,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE instrucMemTest.sv
 set_global_assignment -name EDA_TEST_BENCH_NAME instrucMemTest -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id instrucMemTest
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME instrucMemTest -section_id instrucMemTest
-set_global_assignment -name SOURCE_FILE instructions_file.mem
 set_global_assignment -name SYSTEMVERILOG_FILE MainDecoder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ALUDecoder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE DecoderDecoderDecoder.sv
@@ -86,18 +80,62 @@ set_global_assignment -name SYSTEMVERILOG_FILE controllerTest.sv
 set_global_assignment -name EDA_TEST_BENCH_NAME controllerTest -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id controllerTest
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME controllerTest -section_id controllerTest
+set_global_assignment -name SYSTEMVERILOG_FILE flopenr.sv
+set_global_assignment -name SYSTEMVERILOG_FILE suma.sv
+set_global_assignment -name SYSTEMVERILOG_FILE alu.sv
+set_global_assignment -name SYSTEMVERILOG_FILE aluTest.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME aluTest -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id aluTest
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME aluTest -section_id aluTest
+set_global_assignment -name SYSTEMVERILOG_FILE mux_2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE dataMem.sv
+set_global_assignment -name SOURCE_FILE rom.mem
+set_global_assignment -name SYSTEMVERILOG_FILE dataMemTest.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME dataMemTest -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id dataMemTest
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME dataMemTest -section_id dataMemTest
+set_global_assignment -name SYSTEMVERILOG_FILE extend.sv
+set_global_assignment -name SYSTEMVERILOG_FILE extendTest.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME extendTest -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id extendTest
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME extendTest -section_id extendTest
+set_global_assignment -name SYSTEMVERILOG_FILE registerFile.sv
+set_global_assignment -name SOURCE_FILE regData.mem
+set_global_assignment -name SYSTEMVERILOG_FILE registerFileTest.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME registerFileTest -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id registerFileTest
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME registerFileTest -section_id registerFileTest
+set_global_assignment -name SYSTEMVERILOG_FILE flopr.sv
+set_global_assignment -name SYSTEMVERILOG_FILE dataPath.sv
+set_global_assignment -name SYSTEMVERILOG_FILE datapathTest.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME datapathTest -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id datapathTest
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME datapathTest -section_id datapathTest
+set_global_assignment -name SYSTEMVERILOG_FILE armSingle.sv
+set_global_assignment -name SYSTEMVERILOG_FILE topARM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE topARMTest.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME topARMTest -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id topARMTest
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME topARMTest -section_id topARMTest
 set_global_assignment -name EDA_TEST_BENCH_FILE testRom.sv -section_id testRom
 set_global_assignment -name EDA_TEST_BENCH_FILE instrucMemTest.sv -section_id instrucMemTest
 set_global_assignment -name EDA_TEST_BENCH_FILE decoderTest.sv -section_id decoderTest
 set_global_assignment -name EDA_TEST_BENCH_FILE controllerTest.sv -section_id controllerTest
-set_global_assignment -name SYSTEMVERILOG_FILE flopenr.sv
-set_global_assignment -name SYSTEMVERILOG_FILE SYNC.sv
-set_global_assignment -name SYSTEMVERILOG_FILE VGA.sv
+set_global_assignment -name EDA_TEST_BENCH_FILE aluTest.sv -section_id aluTest
+set_global_assignment -name EDA_TEST_BENCH_FILE dataMemTest.sv -section_id dataMemTest
+set_global_assignment -name EDA_TEST_BENCH_FILE extendTest.sv -section_id extendTest
+set_global_assignment -name EDA_TEST_BENCH_FILE registerFileTest.sv -section_id registerFileTest
+set_global_assignment -name EDA_TEST_BENCH_FILE datapathTest.sv -section_id datapathTest
+set_global_assignment -name EDA_TEST_BENCH_FILE topARMTest.sv -section_id topARMTest
+set_global_assignment -name SYSTEMVERILOG_FILE pcLogic.sv
+set_global_assignment -name SOURCE_FILE instructions_file.mem
 set_global_assignment -name SYSTEMVERILOG_FILE main.sv
+set_global_assignment -name SYSTEMVERILOG_FILE VGA.sv
 set_global_assignment -name SYSTEMVERILOG_FILE dividerClock.sv
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE SYNC.sv
+set_global_assignment -name VHDL_FILE commonPak.vhd
+set_global_assignment -name VHDL_FILE Font_Rom.vhd
+set_global_assignment -name VHDL_FILE printText.vhd
 set_location_assignment PIN_J14 -to B[7]
 set_location_assignment PIN_G15 -to B[6]
 set_location_assignment PIN_F15 -to B[5]
@@ -114,19 +152,21 @@ set_location_assignment PIN_G10 -to G[3]
 set_location_assignment PIN_H12 -to G[2]
 set_location_assignment PIN_J10 -to G[1]
 set_location_assignment PIN_J9 -to G[0]
-set_location_assignment PIN_F13 -to R[7]
-set_location_assignment PIN_E12 -to R[6]
-set_location_assignment PIN_D12 -to R[5]
-set_location_assignment PIN_C12 -to R[4]
-set_location_assignment PIN_B12 -to R[3]
-set_location_assignment PIN_E13 -to R[2]
-set_location_assignment PIN_C13 -to R[1]
-set_location_assignment PIN_A13 -to R[0]
-set_location_assignment PIN_AF14 -to clk
-set_location_assignment PIN_B11 -to hsync
-set_location_assignment PIN_A11 -to vgaclk
 set_location_assignment PIN_D11 -to vsync
-set_global_assignment -name VHDL_FILE Font_Rom.vhd
-set_global_assignment -name VHDL_FILE commonPak.vhd
-set_global_assignment -name VHDL_FILE Pixel_On_Text2.vhd
+set_location_assignment PIN_A11 -to vgaclk
+set_location_assignment PIN_B11 -to hsync
+set_location_assignment PIN_AF14 -to clk
+set_location_assignment PIN_A13 -to R[0]
+set_location_assignment PIN_C13 -to R[1]
+set_location_assignment PIN_E13 -to R[2]
+set_location_assignment PIN_B12 -to R[3]
+set_location_assignment PIN_C12 -to R[4]
+set_location_assignment PIN_D12 -to R[5]
+set_location_assignment PIN_E12 -to R[6]
+set_location_assignment PIN_F13 -to R[7]
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AE12 -to rst
+set_global_assignment -name SYSTEMVERILOG_FILE Clock_Regulator.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
